@@ -1,0 +1,1412 @@
+2018-08-24 17:00:04 [scrapy.core.scraper] ERROR: Spider error processing <GET https://store.steampowered.com/> (referer: https://store.steampowered.com/search/?sort_by=Released_DESC)
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 163, in parse_product
+    yield load_product(response)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 31, in load_product
+    genre = genre.split('<br>')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-08-24 17:39:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://store.steampowered.com/> (referer: https://store.steampowered.com/search/?sort_by=Released_DESC)
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 163, in parse_product
+    yield load_product(response)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 31, in load_product
+    genre = genre.split('<br>')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-08-24 19:07:53 [scrapy.core.scraper] ERROR: Spider error processing <GET https://store.steampowered.com/> (referer: https://store.steampowered.com/search/?sort_by=Released_DESC)
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 163, in parse_product
+    yield load_product(response)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 31, in load_product
+    genre = genre.split('<br>')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-08-29 09:05:02 [scrapy.core.scraper] ERROR: Spider error processing <GET https://store.steampowered.com/search/?sort_by=Released_DESC> (referer: None)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 129, in parse
+    yield scrapy.Request(url = link,callback = self.parse_product)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/http/request/__init__.py", line 25, in __init__
+    self._set_url(url)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/http/request/__init__.py", line 56, in _set_url
+    raise TypeError('Request url must be str or unicode, got %s:' % type(url).__name__)
+TypeError: Request url must be str or unicode, got Link:
+2018-08-29 09:05:02 [twisted] CRITICAL: Unhandled error in Deferred:
+2018-08-29 09:05:02 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'geckodriver': 'geckodriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/crawler.py", line 80, in crawl
+    self.engine = self._create_engine()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/crawler.py", line 105, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/core/engine.py", line 69, in __init__
+    self.downloader = downloader_cls(crawler)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/core/downloader/__init__.py", line 88, in __init__
+    self.middleware = DownloaderMiddlewareManager.from_crawler(crawler)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/middleware.py", line 36, in from_settings
+    mw = mwcls.from_crawler(crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/gog/middlewares.py", line 94, in from_crawler
+    driver_arguments=driver_arguments
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/gog/middlewares.py", line 76, in __init__
+    self.driver = driver_klass(**driver_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver.py", line 160, in __init__
+    self.service.start()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+
+2018-08-29 09:06:23 [scrapy.core.scraper] ERROR: Spider error processing <GET https://store.steampowered.com/search/?sort_by=Released_DESC> (referer: None)
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 129, in parse
+    yield scrapy.Request(url = link,callback = self.parse_product)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/http/request/__init__.py", line 25, in __init__
+    self._set_url(url)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/http/request/__init__.py", line 56, in _set_url
+    raise TypeError('Request url must be str or unicode, got %s:' % type(url).__name__)
+TypeError: Request url must be str or unicode, got Link:
+2018-08-29 09:10:34 [twisted] CRITICAL: Unhandled error in Deferred:
+2018-08-29 09:10:34 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/crawler.py", line 80, in crawl
+    self.engine = self._create_engine()
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/crawler.py", line 105, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/core/engine.py", line 69, in __init__
+    self.downloader = downloader_cls(crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/core/downloader/__init__.py", line 88, in __init__
+    self.middleware = DownloaderMiddlewareManager.from_crawler(crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/middleware.py", line 36, in from_settings
+    mw = mwcls.from_crawler(crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/gog/middlewares.py", line 94, in from_crawler
+    driver_arguments=driver_arguments
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/gog/middlewares.py", line 76, in __init__
+    self.driver = driver_klass(**driver_kwargs)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver.py", line 170, in __init__
+    keep_alive=True)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 156, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 251, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 318, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 496, in _request
+    resp = self._conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+2018-08-29 09:11:09 [scrapy.core.scraper] ERROR: Spider error processing <GET https://store.steampowered.com/> (referer: https://store.steampowered.com/search/?sort_by=Released_DESC)
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 177, in parse_product
+    yield load_product(response)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 33, in load_product
+    genre = genre.split('<br>')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-08-29 09:16:57 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-08-29 09:16:57 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'steam.middlewares.CircumventAgeCheckMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2018-08-29 09:16:57 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-29 09:16:57 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-29 09:16:57 [scrapy.core.engine] INFO: Spider opened
+2018-08-29 09:16:57 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-29 09:17:08 [scrapy.core.scraper] ERROR: Spider error processing <GET https://store.steampowered.com/> (referer: https://store.steampowered.com/search/?sort_by=Released_DESC)
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 177, in parse_product
+    yield load_product(response)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 33, in load_product
+    genre = genre.split('<br>')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-08-29 09:17:57 [scrapy.extensions.logstats] INFO: Crawled 392 pages (at 392 pages/min), scraped 382 items (at 382 items/min)
+2018-08-29 09:17:57 [scrapy.extensions.logstats] INFO: Crawled 59 pages (at 59 pages/min), scraped 51 items (at 51 items/min)
+2018-08-29 09:18:57 [scrapy.extensions.logstats] INFO: Crawled 834 pages (at 442 pages/min), scraped 812 items (at 430 items/min)
+2018-08-29 09:18:57 [scrapy.extensions.logstats] INFO: Crawled 82 pages (at 23 pages/min), scraped 70 items (at 19 items/min)
+2018-08-29 09:19:12 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-08-29 09:19:12 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-29 09:19:12 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-29 09:19:13 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (924 items) in: output/gog_products.jl
+2018-08-29 09:19:13 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 285583,
+ 'downloader/request_count': 944,
+ 'downloader/request_method_count/GET': 944,
+ 'downloader/response_bytes': 110995491,
+ 'downloader/response_count': 944,
+ 'downloader/response_status_count/200': 944,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 29, 16, 19, 13, 333646),
+ 'httpcache/hit': 944,
+ 'item_scraped_count': 924,
+ 'log_count/ERROR': 1,
+ 'memusage/max': 366034944,
+ 'memusage/startup': 65548288,
+ 'request_depth_max': 19,
+ 'response_received_count': 944,
+ 'scheduler/dequeued': 943,
+ 'scheduler/dequeued/memory': 943,
+ 'scheduler/enqueued': 970,
+ 'scheduler/enqueued/memory': 970,
+ 'start_time': datetime.datetime(2018, 8, 29, 16, 16, 57, 103357)}
+2018-08-29 09:19:13 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-08-29 09:19:29 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (91 items) in: output/steam_products.jl
+2018-08-29 09:19:29 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 73044,
+ 'downloader/request_count': 122,
+ 'downloader/request_method_count/GET': 120,
+ 'downloader/request_method_count/POST': 2,
+ 'downloader/response_bytes': 1940211,
+ 'downloader/response_count': 122,
+ 'downloader/response_status_count/200': 105,
+ 'downloader/response_status_count/302': 17,
+ 'dupefilter/filtered': 34,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 29, 16, 19, 29, 216827),
+ 'httpcache/firsthand': 63,
+ 'httpcache/hit': 59,
+ 'httpcache/miss': 63,
+ 'httpcache/store': 46,
+ 'httpcache/uncacheable': 17,
+ 'item_scraped_count': 91,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 17,
+ 'memusage/max': 366034944,
+ 'memusage/startup': 65716224,
+ 'request_depth_max': 8,
+ 'response_received_count': 105,
+ 'scheduler/dequeued': 121,
+ 'scheduler/dequeued/memory': 121,
+ 'scheduler/enqueued': 195,
+ 'scheduler/enqueued/memory': 195,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2018, 8, 29, 16, 16, 57, 180477)}
+2018-08-29 09:19:29 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-08-29 09:25:51 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-08-29 09:25:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'steam.middlewares.CircumventAgeCheckMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2018-08-29 09:25:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-29 09:25:51 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-29 09:25:51 [scrapy.core.engine] INFO: Spider opened
+2018-08-29 09:25:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-29 09:25:56 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-08-29 09:25:56 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-29 09:25:56 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2018-08-29 09:26:35 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-08-29 09:26:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'steam.middlewares.CircumventAgeCheckMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2018-08-29 09:26:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-29 09:26:35 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-29 09:26:35 [scrapy.core.engine] INFO: Spider opened
+2018-08-29 09:26:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-29 09:26:48 [scrapy.core.scraper] ERROR: Spider error processing <GET https://store.steampowered.com/> (referer: https://store.steampowered.com/search/?sort_by=Released_DESC)
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 177, in parse_product
+    yield load_product(response)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 33, in load_product
+    genre = genre.split('<br>')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-08-29 09:27:35 [scrapy.extensions.logstats] INFO: Crawled 85 pages (at 85 pages/min), scraped 73 items (at 73 items/min)
+2018-08-29 09:28:35 [scrapy.extensions.logstats] INFO: Crawled 126 pages (at 41 pages/min), scraped 110 items (at 37 items/min)
+2018-08-29 09:29:35 [scrapy.extensions.logstats] INFO: Crawled 220 pages (at 94 pages/min), scraped 196 items (at 86 items/min)
+2018-08-29 09:30:35 [scrapy.extensions.logstats] INFO: Crawled 538 pages (at 318 pages/min), scraped 486 items (at 290 items/min)
+2018-08-29 09:31:35 [scrapy.extensions.logstats] INFO: Crawled 686 pages (at 148 pages/min), scraped 625 items (at 139 items/min)
+2018-08-29 09:32:35 [scrapy.extensions.logstats] INFO: Crawled 811 pages (at 125 pages/min), scraped 740 items (at 115 items/min)
+2018-08-29 09:33:35 [scrapy.extensions.logstats] INFO: Crawled 1043 pages (at 232 pages/min), scraped 946 items (at 206 items/min)
+2018-08-29 09:34:35 [scrapy.extensions.logstats] INFO: Crawled 1079 pages (at 36 pages/min), scraped 977 items (at 31 items/min)
+2018-08-29 09:35:35 [scrapy.extensions.logstats] INFO: Crawled 1301 pages (at 222 pages/min), scraped 1171 items (at 194 items/min)
+2018-08-29 09:36:35 [scrapy.extensions.logstats] INFO: Crawled 1432 pages (at 131 pages/min), scraped 1288 items (at 117 items/min)
+2018-08-29 09:54:10 [scrapy.extensions.logstats] INFO: Crawled 1611 pages (at 179 pages/min), scraped 1459 items (at 171 items/min)
+2018-08-29 09:54:35 [scrapy.extensions.logstats] INFO: Crawled 1632 pages (at 21 pages/min), scraped 1477 items (at 18 items/min)
+2018-08-29 09:55:35 [scrapy.extensions.logstats] INFO: Crawled 1785 pages (at 153 pages/min), scraped 1619 items (at 142 items/min)
+2018-08-29 09:56:35 [scrapy.extensions.logstats] INFO: Crawled 2092 pages (at 307 pages/min), scraped 1897 items (at 278 items/min)
+2018-08-29 09:57:35 [scrapy.extensions.logstats] INFO: Crawled 2312 pages (at 220 pages/min), scraped 2083 items (at 186 items/min)
+2018-08-29 09:57:52 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-08-29 09:57:52 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-29 09:57:55 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2018-08-29 11:13:24 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-08-29 11:13:24 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'steam.middlewares.CircumventAgeCheckMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2018-08-29 11:13:24 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-29 11:13:24 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-29 11:13:24 [scrapy.core.engine] INFO: Spider opened
+2018-08-29 11:13:24 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-29 11:13:40 [scrapy.core.scraper] ERROR: Spider error processing <GET https://store.steampowered.com/> (referer: https://store.steampowered.com/search/?sort_by=Released_DESC)
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 177, in parse_product
+    yield load_product(response)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 33, in load_product
+    genre = genre.split('<br>')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-08-29 11:14:24 [scrapy.extensions.logstats] INFO: Crawled 459 pages (at 459 pages/min), scraped 448 items (at 448 items/min)
+2018-08-29 11:14:24 [scrapy.extensions.logstats] INFO: Crawled 154 pages (at 154 pages/min), scraped 137 items (at 137 items/min)
+2018-08-29 11:14:58 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-08-29 11:14:59 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-29 11:14:59 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-29 11:14:59 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (709 items) in: output/gog_products.jl
+2018-08-29 11:14:59 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 219691,
+ 'downloader/request_count': 725,
+ 'downloader/request_method_count/GET': 725,
+ 'downloader/response_bytes': 85704912,
+ 'downloader/response_count': 725,
+ 'downloader/response_status_count/200': 725,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 29, 18, 14, 59, 249736),
+ 'httpcache/hit': 725,
+ 'item_scraped_count': 709,
+ 'log_count/ERROR': 1,
+ 'memusage/max': 377610240,
+ 'memusage/startup': 65417216,
+ 'request_depth_max': 15,
+ 'response_received_count': 725,
+ 'scheduler/dequeued': 724,
+ 'scheduler/dequeued/memory': 724,
+ 'scheduler/enqueued': 766,
+ 'scheduler/enqueued/memory': 766,
+ 'start_time': datetime.datetime(2018, 8, 29, 18, 13, 24, 487956)}
+2018-08-29 11:14:59 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-08-29 11:15:24 [scrapy.extensions.logstats] INFO: Crawled 237 pages (at 83 pages/min), scraped 213 items (at 76 items/min)
+2018-08-29 11:16:24 [scrapy.extensions.logstats] INFO: Crawled 237 pages (at 0 pages/min), scraped 213 items (at 0 items/min)
+2018-08-29 11:16:29 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (213 items) in: output/steam_products.jl
+2018-08-29 11:16:29 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 187261,
+ 'downloader/request_count': 268,
+ 'downloader/request_method_count/GET': 267,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 4319957,
+ 'downloader/response_count': 268,
+ 'downloader/response_status_count/200': 237,
+ 'downloader/response_status_count/302': 31,
+ 'dupefilter/filtered': 49,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 29, 18, 16, 29, 492866),
+ 'httpcache/firsthand': 31,
+ 'httpcache/hit': 237,
+ 'httpcache/miss': 31,
+ 'httpcache/uncacheable': 31,
+ 'item_scraped_count': 213,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 17,
+ 'memusage/max': 377610240,
+ 'memusage/startup': 65605632,
+ 'request_depth_max': 19,
+ 'response_received_count': 237,
+ 'scheduler/dequeued': 267,
+ 'scheduler/dequeued/memory': 267,
+ 'scheduler/enqueued': 479,
+ 'scheduler/enqueued/memory': 479,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2018, 8, 29, 18, 13, 24, 501326)}
+2018-08-29 11:16:29 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-08-29 11:29:54 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-08-29 11:29:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'steam.middlewares.CircumventAgeCheckMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2018-08-29 11:29:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-29 11:29:54 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-29 11:29:54 [scrapy.core.engine] INFO: Spider opened
+2018-08-29 11:29:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-29 11:30:09 [scrapy.core.scraper] ERROR: Spider error processing <GET https://store.steampowered.com/> (referer: https://store.steampowered.com/search/?sort_by=Released_DESC)
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 177, in parse_product
+    yield load_product(response)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 33, in load_product
+    genre = genre.split('<br>')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-08-29 11:30:55 [scrapy.extensions.logstats] INFO: Crawled 459 pages (at 459 pages/min), scraped 446 items (at 446 items/min)
+2018-08-29 11:30:55 [scrapy.extensions.logstats] INFO: Crawled 152 pages (at 152 pages/min), scraped 136 items (at 136 items/min)
+2018-08-29 11:31:54 [scrapy.extensions.logstats] INFO: Crawled 936 pages (at 477 pages/min), scraped 909 items (at 463 items/min)
+2018-08-29 11:31:55 [scrapy.extensions.logstats] INFO: Crawled 259 pages (at 107 pages/min), scraped 229 items (at 93 items/min)
+2018-08-29 11:32:55 [scrapy.extensions.logstats] INFO: Crawled 1447 pages (at 511 pages/min), scraped 1416 items (at 507 items/min)
+2018-08-29 11:32:55 [scrapy.extensions.logstats] INFO: Crawled 314 pages (at 55 pages/min), scraped 276 items (at 47 items/min)
+2018-08-29 11:33:55 [scrapy.extensions.logstats] INFO: Crawled 1958 pages (at 511 pages/min), scraped 1916 items (at 500 items/min)
+2018-08-29 11:33:55 [scrapy.extensions.logstats] INFO: Crawled 391 pages (at 77 pages/min), scraped 344 items (at 68 items/min)
+2018-08-29 11:34:55 [scrapy.extensions.logstats] INFO: Crawled 2477 pages (at 519 pages/min), scraped 2425 items (at 509 items/min)
+2018-08-29 11:34:55 [scrapy.extensions.logstats] INFO: Crawled 439 pages (at 48 pages/min), scraped 383 items (at 39 items/min)
+2018-08-29 11:35:14 [scrapy.core.engine] INFO: Closing spider (YU DONE)
+2018-08-29 11:35:14 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (2586 items) in: output/gog_products.jl
+2018-08-29 11:35:14 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 805980,
+ 'downloader/request_count': 2648,
+ 'downloader/request_method_count/GET': 2648,
+ 'downloader/response_bytes': 295360926,
+ 'downloader/response_count': 2648,
+ 'downloader/response_status_count/200': 2647,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'YU DONE',
+ 'finish_time': datetime.datetime(2018, 8, 29, 18, 35, 14, 330479),
+ 'httpcache/firsthand': 1,
+ 'httpcache/hit': 2647,
+ 'httpcache/miss': 1,
+ 'httpcache/uncacheable': 1,
+ 'item_scraped_count': 2586,
+ 'log_count/ERROR': 1,
+ 'memusage/max': 377417728,
+ 'memusage/startup': 65212416,
+ 'request_depth_max': 59,
+ 'response_received_count': 2647,
+ 'scheduler/dequeued': 2647,
+ 'scheduler/dequeued/memory': 2647,
+ 'scheduler/enqueued': 2647,
+ 'scheduler/enqueued/memory': 2647,
+ 'start_time': datetime.datetime(2018, 8, 29, 18, 29, 54, 893807)}
+2018-08-29 11:35:14 [scrapy.core.engine] INFO: Spider closed (YU DONE)
+2018-08-29 11:35:54 [scrapy.extensions.logstats] INFO: Crawled 483 pages (at 44 pages/min), scraped 416 items (at 33 items/min)
+2018-08-29 11:36:48 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-08-29 11:36:48 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-29 11:36:54 [scrapy.extensions.logstats] INFO: Crawled 529 pages (at 46 pages/min), scraped 452 items (at 36 items/min)
+2018-08-29 11:37:54 [scrapy.extensions.logstats] INFO: Crawled 529 pages (at 0 pages/min), scraped 452 items (at 0 items/min)
+2018-08-29 11:38:15 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (452 items) in: output/steam_products.jl
+2018-08-29 11:38:15 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 458150,
+ 'downloader/request_count': 609,
+ 'downloader/request_method_count/GET': 609,
+ 'downloader/response_bytes': 9528012,
+ 'downloader/response_count': 609,
+ 'downloader/response_status_count/200': 529,
+ 'downloader/response_status_count/302': 80,
+ 'dupefilter/filtered': 110,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 29, 18, 38, 15, 388526),
+ 'httpcache/firsthand': 80,
+ 'httpcache/hit': 529,
+ 'httpcache/miss': 80,
+ 'httpcache/uncacheable': 80,
+ 'item_scraped_count': 452,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 26,
+ 'memusage/max': 377417728,
+ 'memusage/startup': 65212416,
+ 'request_depth_max': 68,
+ 'response_received_count': 529,
+ 'scheduler/dequeued': 608,
+ 'scheduler/dequeued/memory': 608,
+ 'scheduler/enqueued': 1736,
+ 'scheduler/enqueued/memory': 1736,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2018, 8, 29, 18, 29, 54, 911775)}
+2018-08-29 11:38:15 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-08-29 15:43:17 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-08-29 15:43:17 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'steam.middlewares.CircumventAgeCheckMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2018-08-29 15:43:17 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-29 15:43:17 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-29 15:43:17 [scrapy.core.engine] INFO: Spider opened
+2018-08-29 15:43:17 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-29 15:43:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://store.steampowered.com/> (referer: https://store.steampowered.com/search/?sort_by=Released_DESC)
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 177, in parse_product
+    yield load_product(response)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 33, in load_product
+    genre = genre.split('<br>')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-08-29 15:44:17 [scrapy.extensions.logstats] INFO: Crawled 451 pages (at 451 pages/min), scraped 440 items (at 440 items/min)
+2018-08-29 15:44:17 [scrapy.extensions.logstats] INFO: Crawled 153 pages (at 153 pages/min), scraped 136 items (at 136 items/min)
+2018-08-29 15:45:15 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-08-29 15:45:16 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-29 15:45:16 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-29 15:45:16 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (909 items) in: output/gog_products.jl
+2018-08-29 15:45:16 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 281126,
+ 'downloader/request_count': 929,
+ 'downloader/request_method_count/GET': 929,
+ 'downloader/response_bytes': 109197382,
+ 'downloader/response_count': 929,
+ 'downloader/response_status_count/200': 929,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 29, 22, 45, 16, 359849),
+ 'httpcache/hit': 929,
+ 'item_scraped_count': 909,
+ 'log_count/ERROR': 1,
+ 'memusage/max': 379338752,
+ 'memusage/startup': 65294336,
+ 'request_depth_max': 19,
+ 'response_received_count': 929,
+ 'scheduler/dequeued': 928,
+ 'scheduler/dequeued/memory': 928,
+ 'scheduler/enqueued': 970,
+ 'scheduler/enqueued/memory': 970,
+ 'start_time': datetime.datetime(2018, 8, 29, 22, 43, 17, 560124)}
+2018-08-29 15:45:16 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-08-29 15:45:17 [scrapy.extensions.logstats] INFO: Crawled 248 pages (at 95 pages/min), scraped 221 items (at 85 items/min)
+2018-08-29 15:46:17 [scrapy.extensions.logstats] INFO: Crawled 248 pages (at 0 pages/min), scraped 221 items (at 0 items/min)
+2018-08-29 15:47:07 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (221 items) in: output/steam_products.jl
+2018-08-29 15:47:07 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 197477,
+ 'downloader/request_count': 281,
+ 'downloader/request_method_count/GET': 280,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 4518202,
+ 'downloader/response_count': 281,
+ 'downloader/response_status_count/200': 248,
+ 'downloader/response_status_count/302': 33,
+ 'dupefilter/filtered': 52,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 29, 22, 47, 7, 681670),
+ 'httpcache/firsthand': 33,
+ 'httpcache/hit': 248,
+ 'httpcache/miss': 33,
+ 'httpcache/uncacheable': 33,
+ 'item_scraped_count': 221,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 17,
+ 'memusage/max': 383991808,
+ 'memusage/startup': 65470464,
+ 'request_depth_max': 21,
+ 'response_received_count': 248,
+ 'scheduler/dequeued': 280,
+ 'scheduler/dequeued/memory': 280,
+ 'scheduler/enqueued': 531,
+ 'scheduler/enqueued/memory': 531,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2018, 8, 29, 22, 43, 17, 608454)}
+2018-08-29 15:47:07 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-08-29 19:07:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-08-29 19:07:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'steam.middlewares.CircumventAgeCheckMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2018-08-29 19:07:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-29 19:07:20 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-29 19:07:20 [scrapy.core.engine] INFO: Spider opened
+2018-08-29 19:07:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-29 19:08:21 [scrapy.extensions.logstats] INFO: Crawled 443 pages (at 443 pages/min), scraped 432 items (at 432 items/min)
+2018-08-29 19:08:21 [scrapy.extensions.logstats] INFO: Crawled 1 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2018-08-29 19:09:21 [scrapy.extensions.logstats] INFO: Crawled 878 pages (at 435 pages/min), scraped 858 items (at 426 items/min)
+2018-08-29 19:09:21 [scrapy.extensions.logstats] INFO: Crawled 1 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-29 19:10:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://store.steampowered.com/> (referer: https://store.steampowered.com/search/?sort_by=Released_DESC)
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 177, in parse_product
+    yield load_product(response)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 33, in load_product
+    genre = genre.split('<br>')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-08-29 19:10:21 [scrapy.extensions.logstats] INFO: Crawled 1277 pages (at 399 pages/min), scraped 1250 items (at 392 items/min)
+2018-08-29 19:10:21 [scrapy.extensions.logstats] INFO: Crawled 101 pages (at 100 pages/min), scraped 92 items (at 92 items/min)
+2018-08-29 19:11:20 [scrapy.extensions.logstats] INFO: Crawled 1763 pages (at 486 pages/min), scraped 1718 items (at 468 items/min)
+2018-08-29 19:11:20 [scrapy.extensions.logstats] INFO: Crawled 139 pages (at 38 pages/min), scraped 124 items (at 32 items/min)
+2018-08-29 19:12:21 [scrapy.extensions.logstats] INFO: Crawled 2087 pages (at 324 pages/min), scraped 2041 items (at 323 items/min)
+2018-08-29 19:12:21 [scrapy.extensions.logstats] INFO: Crawled 190 pages (at 51 pages/min), scraped 169 items (at 45 items/min)
+2018-08-29 19:13:21 [scrapy.extensions.logstats] INFO: Crawled 2466 pages (at 379 pages/min), scraped 2412 items (at 371 items/min)
+2018-08-29 19:13:21 [scrapy.extensions.logstats] INFO: Crawled 305 pages (at 115 pages/min), scraped 274 items (at 105 items/min)
+2018-08-29 19:14:21 [scrapy.extensions.logstats] INFO: Crawled 2682 pages (at 216 pages/min), scraped 2586 items (at 174 items/min)
+2018-08-29 19:14:21 [scrapy.extensions.logstats] INFO: Crawled 379 pages (at 74 pages/min), scraped 336 items (at 62 items/min)
+2018-08-29 19:14:32 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <400 https://www.gog.com/games/ajax/filtered?mediaType=game&sort=popularity&page=102>: HTTP status code is not handled or not allowed
+2018-08-29 19:14:32 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-08-29 19:14:32 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (2586 items) in: output/gog_products.jl
+2018-08-29 19:14:32 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 820013,
+ 'downloader/request_count': 2690,
+ 'downloader/request_method_count/GET': 2690,
+ 'downloader/response_bytes': 295378490,
+ 'downloader/response_count': 2690,
+ 'downloader/response_status_count/200': 2688,
+ 'downloader/response_status_count/302': 1,
+ 'downloader/response_status_count/400': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 8, 30, 2, 14, 32, 528441),
+ 'httpcache/firsthand': 29,
+ 'httpcache/hit': 2661,
+ 'httpcache/miss': 29,
+ 'httpcache/store': 28,
+ 'httpcache/uncacheable': 1,
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/400': 1,
+ 'item_scraped_count': 2586,
+ 'log_count/ERROR': 1,
+ 'memusage/max': 377741312,
+ 'memusage/startup': 65515520,
+ 'request_depth_max': 101,
+ 'response_received_count': 2689,
+ 'scheduler/dequeued': 2689,
+ 'scheduler/dequeued/memory': 2689,
+ 'scheduler/enqueued': 2689,
+ 'scheduler/enqueued/memory': 2689,
+ 'start_time': datetime.datetime(2018, 8, 30, 2, 7, 20, 923332)}
+2018-08-29 19:14:32 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-08-29 19:15:20 [scrapy.extensions.logstats] INFO: Crawled 441 pages (at 62 pages/min), scraped 386 items (at 50 items/min)
+2018-08-29 19:16:20 [scrapy.extensions.logstats] INFO: Crawled 494 pages (at 53 pages/min), scraped 426 items (at 40 items/min)
+2018-08-29 19:17:20 [scrapy.extensions.logstats] INFO: Crawled 582 pages (at 88 pages/min), scraped 498 items (at 72 items/min)
+2018-08-29 19:18:20 [scrapy.extensions.logstats] INFO: Crawled 664 pages (at 82 pages/min), scraped 569 items (at 71 items/min)
+2018-08-29 19:19:20 [scrapy.extensions.logstats] INFO: Crawled 770 pages (at 106 pages/min), scraped 661 items (at 92 items/min)
+2018-08-29 19:20:20 [scrapy.extensions.logstats] INFO: Crawled 857 pages (at 87 pages/min), scraped 736 items (at 75 items/min)
+2018-08-29 19:21:20 [scrapy.extensions.logstats] INFO: Crawled 1043 pages (at 186 pages/min), scraped 907 items (at 171 items/min)
+2018-08-29 19:22:20 [scrapy.extensions.logstats] INFO: Crawled 1175 pages (at 132 pages/min), scraped 1031 items (at 124 items/min)
+2018-08-29 19:23:20 [scrapy.extensions.logstats] INFO: Crawled 1312 pages (at 137 pages/min), scraped 1165 items (at 134 items/min)
+2018-08-29 19:24:21 [scrapy.extensions.logstats] INFO: Crawled 1477 pages (at 165 pages/min), scraped 1321 items (at 156 items/min)
+2018-08-29 19:25:20 [scrapy.extensions.logstats] INFO: Crawled 1689 pages (at 212 pages/min), scraped 1528 items (at 207 items/min)
+2018-08-29 19:26:20 [scrapy.extensions.logstats] INFO: Crawled 1942 pages (at 253 pages/min), scraped 1771 items (at 243 items/min)
+2018-08-29 19:27:20 [scrapy.extensions.logstats] INFO: Crawled 2041 pages (at 99 pages/min), scraped 1866 items (at 95 items/min)
+2018-08-29 19:28:20 [scrapy.extensions.logstats] INFO: Crawled 2170 pages (at 129 pages/min), scraped 1989 items (at 123 items/min)
+2018-08-29 19:29:20 [scrapy.extensions.logstats] INFO: Crawled 2331 pages (at 161 pages/min), scraped 2135 items (at 146 items/min)
+2018-08-29 19:30:20 [scrapy.extensions.logstats] INFO: Crawled 2529 pages (at 198 pages/min), scraped 2330 items (at 195 items/min)
+2018-08-29 19:31:20 [scrapy.extensions.logstats] INFO: Crawled 2747 pages (at 218 pages/min), scraped 2533 items (at 203 items/min)
+2018-08-29 19:32:20 [scrapy.extensions.logstats] INFO: Crawled 2860 pages (at 113 pages/min), scraped 2631 items (at 98 items/min)
+2018-08-29 19:33:21 [scrapy.extensions.logstats] INFO: Crawled 2962 pages (at 102 pages/min), scraped 2712 items (at 81 items/min)
+2018-08-29 19:42:27 [scrapy.extensions.logstats] INFO: Crawled 3036 pages (at 74 pages/min), scraped 2795 items (at 83 items/min)
+2018-08-29 19:43:20 [scrapy.extensions.logstats] INFO: Crawled 3097 pages (at 61 pages/min), scraped 2851 items (at 56 items/min)
+2018-08-29 19:44:20 [scrapy.extensions.logstats] INFO: Crawled 3121 pages (at 24 pages/min), scraped 2874 items (at 23 items/min)
+2018-08-29 19:44:49 [scrapy.core.scraper] ERROR: Spider error processing <GET https://store.steampowered.com/app/558230/Elsword_FreetoPlay/?snr=1_7_7_230_150_136> (referer: https://store.steampowered.com/search/results?sort_by=Released_DESC&page=136&hide_filtered_results_warning=1)
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 177, in parse_product
+    yield load_product(response)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/steam/spiders/product_spider.py", line 33, in load_product
+    genre = genre.split('<br>')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-08-29 19:45:21 [scrapy.extensions.logstats] INFO: Crawled 3144 pages (at 23 pages/min), scraped 2888 items (at 14 items/min)
+2018-08-29 19:46:20 [scrapy.extensions.logstats] INFO: Crawled 3239 pages (at 95 pages/min), scraped 2980 items (at 92 items/min)
+2018-08-29 19:47:20 [scrapy.extensions.logstats] INFO: Crawled 3480 pages (at 241 pages/min), scraped 3178 items (at 198 items/min)
+2018-08-29 19:48:20 [scrapy.extensions.logstats] INFO: Crawled 3639 pages (at 159 pages/min), scraped 3300 items (at 122 items/min)
+2018-08-29 19:49:20 [scrapy.extensions.logstats] INFO: Crawled 3842 pages (at 203 pages/min), scraped 3490 items (at 190 items/min)
+2018-08-29 19:50:21 [scrapy.extensions.logstats] INFO: Crawled 4070 pages (at 228 pages/min), scraped 3686 items (at 196 items/min)
+2018-08-29 19:51:21 [scrapy.extensions.logstats] INFO: Crawled 4361 pages (at 291 pages/min), scraped 3965 items (at 279 items/min)
+2018-08-29 19:52:20 [scrapy.extensions.logstats] INFO: Crawled 4597 pages (at 236 pages/min), scraped 4179 items (at 214 items/min)
+2018-08-29 19:53:20 [scrapy.extensions.logstats] INFO: Crawled 4667 pages (at 70 pages/min), scraped 4243 items (at 64 items/min)
+2018-08-29 19:54:20 [scrapy.extensions.logstats] INFO: Crawled 4667 pages (at 0 pages/min), scraped 4243 items (at 0 items/min)
+2018-08-29 19:55:20 [scrapy.extensions.logstats] INFO: Crawled 4667 pages (at 0 pages/min), scraped 4243 items (at 0 items/min)
+2018-08-29 19:56:20 [scrapy.extensions.logstats] INFO: Crawled 4668 pages (at 1 pages/min), scraped 4243 items (at 0 items/min)
+2018-08-29 19:57:20 [scrapy.extensions.logstats] INFO: Crawled 4668 pages (at 0 pages/min), scraped 4243 items (at 0 items/min)
+2018-08-29 19:58:20 [scrapy.extensions.logstats] INFO: Crawled 4668 pages (at 0 pages/min), scraped 4243 items (at 0 items/min)
+2018-08-29 19:59:20 [scrapy.extensions.logstats] INFO: Crawled 4668 pages (at 0 pages/min), scraped 4243 items (at 0 items/min)
+2018-08-29 20:00:20 [scrapy.extensions.logstats] INFO: Crawled 4668 pages (at 0 pages/min), scraped 4243 items (at 0 items/min)
+2018-08-29 20:01:20 [scrapy.extensions.logstats] INFO: Crawled 4687 pages (at 19 pages/min), scraped 4261 items (at 18 items/min)
+2018-08-29 20:02:20 [scrapy.extensions.logstats] INFO: Crawled 4709 pages (at 22 pages/min), scraped 4280 items (at 19 items/min)
+2018-08-29 20:03:20 [scrapy.extensions.logstats] INFO: Crawled 4711 pages (at 2 pages/min), scraped 4280 items (at 0 items/min)
+2018-08-29 20:04:20 [scrapy.extensions.logstats] INFO: Crawled 4711 pages (at 0 pages/min), scraped 4280 items (at 0 items/min)
+2018-08-29 20:05:20 [scrapy.extensions.logstats] INFO: Crawled 4711 pages (at 0 pages/min), scraped 4280 items (at 0 items/min)
+2018-08-29 20:06:20 [scrapy.extensions.logstats] INFO: Crawled 4711 pages (at 0 pages/min), scraped 4280 items (at 0 items/min)
+2018-08-29 20:07:20 [scrapy.extensions.logstats] INFO: Crawled 4711 pages (at 0 pages/min), scraped 4280 items (at 0 items/min)
+2018-08-29 20:08:20 [scrapy.extensions.logstats] INFO: Crawled 4731 pages (at 20 pages/min), scraped 4299 items (at 19 items/min)
+2018-08-29 20:09:20 [scrapy.extensions.logstats] INFO: Crawled 4733 pages (at 2 pages/min), scraped 4299 items (at 0 items/min)
+2018-08-29 20:10:20 [scrapy.extensions.logstats] INFO: Crawled 4733 pages (at 0 pages/min), scraped 4299 items (at 0 items/min)
+2018-08-29 20:11:20 [scrapy.extensions.logstats] INFO: Crawled 4733 pages (at 0 pages/min), scraped 4299 items (at 0 items/min)
+2018-08-29 20:12:20 [scrapy.extensions.logstats] INFO: Crawled 4734 pages (at 1 pages/min), scraped 4299 items (at 0 items/min)
+2018-08-29 20:13:20 [scrapy.extensions.logstats] INFO: Crawled 4734 pages (at 0 pages/min), scraped 4299 items (at 0 items/min)
+2018-08-29 20:14:20 [scrapy.extensions.logstats] INFO: Crawled 4755 pages (at 21 pages/min), scraped 4319 items (at 20 items/min)
+2018-08-29 20:15:20 [scrapy.extensions.logstats] INFO: Crawled 4778 pages (at 23 pages/min), scraped 4341 items (at 22 items/min)
+2018-08-29 20:16:20 [scrapy.extensions.logstats] INFO: Crawled 4823 pages (at 45 pages/min), scraped 4380 items (at 39 items/min)
+2018-08-29 20:17:20 [scrapy.extensions.logstats] INFO: Crawled 4941 pages (at 118 pages/min), scraped 4491 items (at 111 items/min)
+2018-08-29 20:18:20 [scrapy.extensions.logstats] INFO: Crawled 5046 pages (at 105 pages/min), scraped 4582 items (at 91 items/min)
+2018-08-29 20:19:20 [scrapy.extensions.logstats] INFO: Crawled 5114 pages (at 68 pages/min), scraped 4641 items (at 59 items/min)
+2018-08-29 20:20:20 [scrapy.extensions.logstats] INFO: Crawled 5205 pages (at 91 pages/min), scraped 4726 items (at 85 items/min)
+2018-08-29 20:21:20 [scrapy.extensions.logstats] INFO: Crawled 5294 pages (at 89 pages/min), scraped 4809 items (at 83 items/min)
+2018-08-29 20:22:20 [scrapy.extensions.logstats] INFO: Crawled 5412 pages (at 118 pages/min), scraped 4916 items (at 107 items/min)
+2018-08-29 20:23:20 [scrapy.extensions.logstats] INFO: Crawled 5502 pages (at 90 pages/min), scraped 5000 items (at 84 items/min)
+2018-08-29 20:24:20 [scrapy.extensions.logstats] INFO: Crawled 5576 pages (at 74 pages/min), scraped 5067 items (at 67 items/min)
+2018-08-29 20:25:20 [scrapy.extensions.logstats] INFO: Crawled 5647 pages (at 71 pages/min), scraped 5126 items (at 59 items/min)
+2018-08-29 20:26:21 [scrapy.extensions.logstats] INFO: Crawled 5738 pages (at 91 pages/min), scraped 5195 items (at 69 items/min)
+2018-08-29 20:27:20 [scrapy.extensions.logstats] INFO: Crawled 5786 pages (at 48 pages/min), scraped 5232 items (at 37 items/min)
+2018-08-29 20:52:11 [scrapy.extensions.logstats] INFO: Crawled 5804 pages (at 18 pages/min), scraped 5232 items (at 0 items/min)
+2018-08-29 20:52:20 [scrapy.extensions.logstats] INFO: Crawled 5804 pages (at 0 pages/min), scraped 5232 items (at 0 items/min)
+2018-08-29 20:53:20 [scrapy.extensions.logstats] INFO: Crawled 5835 pages (at 31 pages/min), scraped 5254 items (at 22 items/min)
+2018-08-29 20:54:20 [scrapy.extensions.logstats] INFO: Crawled 5882 pages (at 47 pages/min), scraped 5297 items (at 43 items/min)
+2018-08-29 20:55:20 [scrapy.extensions.logstats] INFO: Crawled 5884 pages (at 2 pages/min), scraped 5297 items (at 0 items/min)
+2018-08-29 20:56:20 [scrapy.extensions.logstats] INFO: Crawled 5902 pages (at 18 pages/min), scraped 5312 items (at 15 items/min)
+2018-08-29 20:57:20 [scrapy.extensions.logstats] INFO: Crawled 5909 pages (at 7 pages/min), scraped 5312 items (at 0 items/min)
+2018-08-29 20:58:20 [scrapy.extensions.logstats] INFO: Crawled 5929 pages (at 20 pages/min), scraped 5325 items (at 13 items/min)
+2018-08-29 20:59:20 [scrapy.extensions.logstats] INFO: Crawled 5963 pages (at 34 pages/min), scraped 5349 items (at 24 items/min)
+2018-08-29 21:00:20 [scrapy.extensions.logstats] INFO: Crawled 6010 pages (at 47 pages/min), scraped 5386 items (at 37 items/min)
+2018-08-29 21:01:20 [scrapy.extensions.logstats] INFO: Crawled 6032 pages (at 22 pages/min), scraped 5405 items (at 19 items/min)
+2018-08-29 21:02:20 [scrapy.extensions.logstats] INFO: Crawled 6082 pages (at 50 pages/min), scraped 5449 items (at 44 items/min)
+2018-08-29 21:03:20 [scrapy.extensions.logstats] INFO: Crawled 6169 pages (at 87 pages/min), scraped 5528 items (at 79 items/min)
+2018-08-29 21:04:20 [scrapy.extensions.logstats] INFO: Crawled 6225 pages (at 56 pages/min), scraped 5576 items (at 48 items/min)
+2018-08-29 21:05:20 [scrapy.extensions.logstats] INFO: Crawled 6268 pages (at 43 pages/min), scraped 5608 items (at 32 items/min)
+2018-08-29 21:06:20 [scrapy.extensions.logstats] INFO: Crawled 6274 pages (at 6 pages/min), scraped 5608 items (at 0 items/min)
+2018-08-29 21:07:20 [scrapy.extensions.logstats] INFO: Crawled 6316 pages (at 42 pages/min), scraped 5646 items (at 38 items/min)
+2018-08-29 21:08:20 [scrapy.extensions.logstats] INFO: Crawled 6339 pages (at 23 pages/min), scraped 5666 items (at 20 items/min)
+2018-08-29 21:09:20 [scrapy.extensions.logstats] INFO: Crawled 6402 pages (at 63 pages/min), scraped 5724 items (at 58 items/min)
+2018-08-29 21:10:21 [scrapy.extensions.logstats] INFO: Crawled 6455 pages (at 53 pages/min), scraped 5765 items (at 41 items/min)
+2018-08-29 21:11:20 [scrapy.extensions.logstats] INFO: Crawled 6500 pages (at 45 pages/min), scraped 5808 items (at 43 items/min)
+2018-08-29 21:12:20 [scrapy.extensions.logstats] INFO: Crawled 6524 pages (at 24 pages/min), scraped 5831 items (at 23 items/min)
+2018-08-29 21:13:20 [scrapy.extensions.logstats] INFO: Crawled 6533 pages (at 9 pages/min), scraped 5839 items (at 8 items/min)
+2018-08-29 21:14:20 [scrapy.extensions.logstats] INFO: Crawled 6535 pages (at 2 pages/min), scraped 5839 items (at 0 items/min)
+2018-08-29 21:15:20 [scrapy.extensions.logstats] INFO: Crawled 6553 pages (at 18 pages/min), scraped 5852 items (at 13 items/min)
+2018-08-29 21:16:20 [scrapy.extensions.logstats] INFO: Crawled 6554 pages (at 1 pages/min), scraped 5853 items (at 1 items/min)
+2018-08-29 21:17:20 [scrapy.extensions.logstats] INFO: Crawled 6580 pages (at 26 pages/min), scraped 5873 items (at 20 items/min)
+2018-08-29 21:18:20 [scrapy.extensions.logstats] INFO: Crawled 6586 pages (at 6 pages/min), scraped 5873 items (at 0 items/min)
+2018-08-29 21:19:20 [scrapy.extensions.logstats] INFO: Crawled 6611 pages (at 25 pages/min), scraped 5895 items (at 22 items/min)
+2018-08-29 21:20:20 [scrapy.extensions.logstats] INFO: Crawled 6676 pages (at 65 pages/min), scraped 5951 items (at 56 items/min)
+2018-08-29 21:21:20 [scrapy.extensions.logstats] INFO: Crawled 6676 pages (at 0 pages/min), scraped 5951 items (at 0 items/min)
+2018-08-29 21:22:20 [scrapy.extensions.logstats] INFO: Crawled 6728 pages (at 52 pages/min), scraped 5995 items (at 44 items/min)
+2018-08-29 21:23:20 [scrapy.extensions.logstats] INFO: Crawled 6818 pages (at 90 pages/min), scraped 6078 items (at 83 items/min)
+2018-08-29 21:24:20 [scrapy.extensions.logstats] INFO: Crawled 6879 pages (at 61 pages/min), scraped 6132 items (at 54 items/min)
+2018-08-29 21:25:20 [scrapy.extensions.logstats] INFO: Crawled 6880 pages (at 1 pages/min), scraped 6133 items (at 1 items/min)
+2018-08-29 21:26:20 [scrapy.extensions.logstats] INFO: Crawled 6907 pages (at 27 pages/min), scraped 6157 items (at 24 items/min)
+2018-08-29 21:27:20 [scrapy.extensions.logstats] INFO: Crawled 6975 pages (at 68 pages/min), scraped 6218 items (at 61 items/min)
+2018-08-29 21:28:20 [scrapy.extensions.logstats] INFO: Crawled 6985 pages (at 10 pages/min), scraped 6225 items (at 7 items/min)
+2018-08-29 21:29:20 [scrapy.extensions.logstats] INFO: Crawled 6990 pages (at 5 pages/min), scraped 6225 items (at 0 items/min)
+2018-08-29 21:30:20 [scrapy.extensions.logstats] INFO: Crawled 6994 pages (at 4 pages/min), scraped 6225 items (at 0 items/min)
+2018-08-29 21:31:20 [scrapy.extensions.logstats] INFO: Crawled 7018 pages (at 24 pages/min), scraped 6245 items (at 20 items/min)
+2018-08-29 21:32:20 [scrapy.extensions.logstats] INFO: Crawled 7018 pages (at 0 pages/min), scraped 6245 items (at 0 items/min)
+2018-08-29 21:33:20 [scrapy.extensions.logstats] INFO: Crawled 7018 pages (at 0 pages/min), scraped 6245 items (at 0 items/min)
+2018-08-29 21:34:20 [scrapy.extensions.logstats] INFO: Crawled 7042 pages (at 24 pages/min), scraped 6268 items (at 23 items/min)
+2018-08-29 21:35:20 [scrapy.extensions.logstats] INFO: Crawled 7042 pages (at 0 pages/min), scraped 6268 items (at 0 items/min)
+2018-08-29 21:36:20 [scrapy.extensions.logstats] INFO: Crawled 7060 pages (at 18 pages/min), scraped 6285 items (at 17 items/min)
+2018-08-29 21:37:20 [scrapy.extensions.logstats] INFO: Crawled 7060 pages (at 0 pages/min), scraped 6285 items (at 0 items/min)
+2018-08-29 21:38:20 [scrapy.extensions.logstats] INFO: Crawled 7084 pages (at 24 pages/min), scraped 6306 items (at 21 items/min)
+2018-08-29 21:39:20 [scrapy.extensions.logstats] INFO: Crawled 7084 pages (at 0 pages/min), scraped 6306 items (at 0 items/min)
+2018-08-29 21:40:20 [scrapy.extensions.logstats] INFO: Crawled 7086 pages (at 2 pages/min), scraped 6306 items (at 0 items/min)
+2018-08-29 21:41:20 [scrapy.extensions.logstats] INFO: Crawled 7087 pages (at 1 pages/min), scraped 6306 items (at 0 items/min)
+2018-08-29 21:42:20 [scrapy.extensions.logstats] INFO: Crawled 7089 pages (at 2 pages/min), scraped 6306 items (at 0 items/min)
+2018-08-29 21:43:20 [scrapy.extensions.logstats] INFO: Crawled 7139 pages (at 50 pages/min), scraped 6348 items (at 42 items/min)
+2018-08-29 21:44:20 [scrapy.extensions.logstats] INFO: Crawled 7313 pages (at 174 pages/min), scraped 6511 items (at 163 items/min)
+2018-08-29 21:45:20 [scrapy.extensions.logstats] INFO: Crawled 7356 pages (at 43 pages/min), scraped 6540 items (at 29 items/min)
+2018-08-29 21:46:20 [scrapy.extensions.logstats] INFO: Crawled 7504 pages (at 148 pages/min), scraped 6668 items (at 128 items/min)
+2018-08-29 21:47:20 [scrapy.extensions.logstats] INFO: Crawled 7717 pages (at 213 pages/min), scraped 6860 items (at 192 items/min)
+2018-08-29 21:48:21 [scrapy.extensions.logstats] INFO: Crawled 7833 pages (at 116 pages/min), scraped 6949 items (at 89 items/min)
+2018-08-29 21:49:20 [scrapy.extensions.logstats] INFO: Crawled 8027 pages (at 194 pages/min), scraped 7137 items (at 188 items/min)
+2018-08-29 21:50:20 [scrapy.extensions.logstats] INFO: Crawled 8145 pages (at 118 pages/min), scraped 7242 items (at 105 items/min)
+2018-08-29 21:51:21 [scrapy.extensions.logstats] INFO: Crawled 8334 pages (at 189 pages/min), scraped 7410 items (at 168 items/min)
+2018-08-29 21:52:20 [scrapy.extensions.logstats] INFO: Crawled 8568 pages (at 234 pages/min), scraped 7623 items (at 213 items/min)
+2018-08-29 21:53:20 [scrapy.extensions.logstats] INFO: Crawled 8778 pages (at 210 pages/min), scraped 7822 items (at 199 items/min)
+2018-08-29 21:54:20 [scrapy.extensions.logstats] INFO: Crawled 8958 pages (at 180 pages/min), scraped 7988 items (at 166 items/min)
+2018-08-29 21:55:21 [scrapy.extensions.logstats] INFO: Crawled 9131 pages (at 173 pages/min), scraped 8140 items (at 152 items/min)
+2018-08-29 21:56:20 [scrapy.extensions.logstats] INFO: Crawled 9348 pages (at 217 pages/min), scraped 8342 items (at 202 items/min)
+2018-08-29 21:57:20 [scrapy.extensions.logstats] INFO: Crawled 9636 pages (at 288 pages/min), scraped 8604 items (at 262 items/min)
+2018-08-29 21:58:20 [scrapy.extensions.logstats] INFO: Crawled 9867 pages (at 231 pages/min), scraped 8819 items (at 215 items/min)
+2018-08-29 21:59:20 [scrapy.extensions.logstats] INFO: Crawled 10087 pages (at 220 pages/min), scraped 9008 items (at 189 items/min)
+2018-08-29 22:00:21 [scrapy.extensions.logstats] INFO: Crawled 10292 pages (at 205 pages/min), scraped 9182 items (at 174 items/min)
+2018-08-29 22:01:20 [scrapy.extensions.logstats] INFO: Crawled 10442 pages (at 150 pages/min), scraped 9305 items (at 123 items/min)
+2018-08-29 22:02:20 [scrapy.extensions.logstats] INFO: Crawled 10716 pages (at 274 pages/min), scraped 9551 items (at 246 items/min)
+2018-08-29 22:03:20 [scrapy.extensions.logstats] INFO: Crawled 10947 pages (at 231 pages/min), scraped 9762 items (at 211 items/min)
+2018-08-29 22:04:21 [scrapy.extensions.logstats] INFO: Crawled 11101 pages (at 154 pages/min), scraped 9903 items (at 141 items/min)
+2018-08-29 22:05:20 [scrapy.extensions.logstats] INFO: Crawled 11382 pages (at 281 pages/min), scraped 10155 items (at 252 items/min)
+2018-08-29 22:06:21 [scrapy.extensions.logstats] INFO: Crawled 11581 pages (at 199 pages/min), scraped 10336 items (at 181 items/min)
+2018-08-29 22:07:20 [scrapy.extensions.logstats] INFO: Crawled 11815 pages (at 234 pages/min), scraped 10545 items (at 209 items/min)
+2018-08-29 22:08:20 [scrapy.extensions.logstats] INFO: Crawled 11998 pages (at 183 pages/min), scraped 10708 items (at 163 items/min)
+2018-08-29 22:09:20 [scrapy.extensions.logstats] INFO: Crawled 12244 pages (at 246 pages/min), scraped 10921 items (at 213 items/min)
+2018-08-29 22:10:20 [scrapy.extensions.logstats] INFO: Crawled 12425 pages (at 181 pages/min), scraped 11077 items (at 156 items/min)
+2018-08-29 22:11:20 [scrapy.extensions.logstats] INFO: Crawled 12496 pages (at 71 pages/min), scraped 11135 items (at 58 items/min)
+2018-08-29 22:12:20 [scrapy.extensions.logstats] INFO: Crawled 12701 pages (at 205 pages/min), scraped 11320 items (at 185 items/min)
+2018-08-29 22:13:20 [scrapy.extensions.logstats] INFO: Crawled 12849 pages (at 148 pages/min), scraped 11453 items (at 133 items/min)
+2018-08-29 22:14:20 [scrapy.extensions.logstats] INFO: Crawled 13010 pages (at 161 pages/min), scraped 11594 items (at 141 items/min)
+2018-08-29 22:15:20 [scrapy.extensions.logstats] INFO: Crawled 13257 pages (at 247 pages/min), scraped 11824 items (at 230 items/min)
+2018-08-29 22:16:20 [scrapy.extensions.logstats] INFO: Crawled 13532 pages (at 275 pages/min), scraped 12070 items (at 246 items/min)
+2018-08-29 22:17:20 [scrapy.extensions.logstats] INFO: Crawled 13810 pages (at 278 pages/min), scraped 12320 items (at 250 items/min)
+2018-08-29 22:18:20 [scrapy.extensions.logstats] INFO: Crawled 14042 pages (at 232 pages/min), scraped 12535 items (at 215 items/min)
+2018-08-29 22:19:20 [scrapy.extensions.logstats] INFO: Crawled 14201 pages (at 159 pages/min), scraped 12676 items (at 141 items/min)
+2018-08-29 22:20:20 [scrapy.extensions.logstats] INFO: Crawled 14366 pages (at 165 pages/min), scraped 12828 items (at 152 items/min)
+2018-08-29 22:21:20 [scrapy.extensions.logstats] INFO: Crawled 14601 pages (at 235 pages/min), scraped 13039 items (at 211 items/min)
+2018-08-29 22:22:21 [scrapy.extensions.logstats] INFO: Crawled 14869 pages (at 268 pages/min), scraped 13277 items (at 238 items/min)
+2018-08-29 22:23:20 [scrapy.extensions.logstats] INFO: Crawled 14956 pages (at 87 pages/min), scraped 13356 items (at 79 items/min)
+2018-08-29 22:24:20 [scrapy.extensions.logstats] INFO: Crawled 15043 pages (at 87 pages/min), scraped 13433 items (at 77 items/min)
+2018-08-29 22:25:20 [scrapy.extensions.logstats] INFO: Crawled 15257 pages (at 214 pages/min), scraped 13624 items (at 191 items/min)
+2018-08-29 22:26:20 [scrapy.extensions.logstats] INFO: Crawled 15555 pages (at 298 pages/min), scraped 13901 items (at 277 items/min)
+2018-08-29 22:27:20 [scrapy.extensions.logstats] INFO: Crawled 15873 pages (at 318 pages/min), scraped 14197 items (at 296 items/min)
+2018-08-29 22:28:20 [scrapy.extensions.logstats] INFO: Crawled 16085 pages (at 212 pages/min), scraped 14384 items (at 187 items/min)
+2018-08-29 22:29:20 [scrapy.extensions.logstats] INFO: Crawled 16396 pages (at 311 pages/min), scraped 14643 items (at 259 items/min)
+2018-08-29 22:30:21 [scrapy.extensions.logstats] INFO: Crawled 16660 pages (at 264 pages/min), scraped 14902 items (at 259 items/min)
+2018-08-29 22:31:21 [scrapy.extensions.logstats] INFO: Crawled 16917 pages (at 257 pages/min), scraped 15132 items (at 230 items/min)
+2018-08-29 22:32:21 [scrapy.extensions.logstats] INFO: Crawled 17082 pages (at 165 pages/min), scraped 15270 items (at 138 items/min)
+2018-08-29 22:33:20 [scrapy.extensions.logstats] INFO: Crawled 17169 pages (at 87 pages/min), scraped 15353 items (at 83 items/min)
+2018-08-29 22:34:20 [scrapy.extensions.logstats] INFO: Crawled 17255 pages (at 86 pages/min), scraped 15428 items (at 75 items/min)
+2018-08-29 22:35:20 [scrapy.extensions.logstats] INFO: Crawled 17299 pages (at 44 pages/min), scraped 15467 items (at 39 items/min)
+2018-08-29 22:36:20 [scrapy.extensions.logstats] INFO: Crawled 17480 pages (at 181 pages/min), scraped 15632 items (at 165 items/min)
+2018-08-29 22:37:20 [scrapy.extensions.logstats] INFO: Crawled 17629 pages (at 149 pages/min), scraped 15746 items (at 114 items/min)
+2018-08-29 22:38:20 [scrapy.extensions.logstats] INFO: Crawled 17825 pages (at 196 pages/min), scraped 15916 items (at 170 items/min)
+2018-08-29 22:39:20 [scrapy.extensions.logstats] INFO: Crawled 18006 pages (at 181 pages/min), scraped 16081 items (at 165 items/min)
+2018-08-29 22:40:20 [scrapy.extensions.logstats] INFO: Crawled 18104 pages (at 98 pages/min), scraped 16171 items (at 90 items/min)
+2018-08-29 22:41:21 [scrapy.extensions.logstats] INFO: Crawled 18352 pages (at 248 pages/min), scraped 16397 items (at 226 items/min)
+2018-08-29 22:42:20 [scrapy.extensions.logstats] INFO: Crawled 18486 pages (at 134 pages/min), scraped 16499 items (at 102 items/min)
+2018-08-29 22:43:20 [scrapy.extensions.logstats] INFO: Crawled 18682 pages (at 196 pages/min), scraped 16668 items (at 169 items/min)
+2018-08-29 22:44:21 [scrapy.extensions.logstats] INFO: Crawled 18840 pages (at 158 pages/min), scraped 16813 items (at 145 items/min)
+2018-08-29 22:45:20 [scrapy.extensions.logstats] INFO: Crawled 18976 pages (at 136 pages/min), scraped 16931 items (at 118 items/min)
+2018-08-29 22:46:20 [scrapy.extensions.logstats] INFO: Crawled 19158 pages (at 182 pages/min), scraped 17093 items (at 162 items/min)
+2018-08-29 22:47:20 [scrapy.extensions.logstats] INFO: Crawled 19274 pages (at 116 pages/min), scraped 17198 items (at 105 items/min)
+2018-08-29 22:48:20 [scrapy.extensions.logstats] INFO: Crawled 19320 pages (at 46 pages/min), scraped 17239 items (at 41 items/min)
+2018-08-29 22:49:20 [scrapy.extensions.logstats] INFO: Crawled 19453 pages (at 133 pages/min), scraped 17352 items (at 113 items/min)
+2018-08-29 22:50:20 [scrapy.extensions.logstats] INFO: Crawled 19576 pages (at 123 pages/min), scraped 17460 items (at 108 items/min)
+2018-08-29 22:51:20 [scrapy.extensions.logstats] INFO: Crawled 19810 pages (at 234 pages/min), scraped 17658 items (at 198 items/min)
+2018-08-29 22:52:20 [scrapy.extensions.logstats] INFO: Crawled 19920 pages (at 110 pages/min), scraped 17761 items (at 103 items/min)
+2018-08-29 22:53:20 [scrapy.extensions.logstats] INFO: Crawled 19993 pages (at 73 pages/min), scraped 17822 items (at 61 items/min)
+2018-08-29 22:54:20 [scrapy.extensions.logstats] INFO: Crawled 20126 pages (at 133 pages/min), scraped 17943 items (at 121 items/min)
+2018-08-29 22:55:20 [scrapy.extensions.logstats] INFO: Crawled 20191 pages (at 65 pages/min), scraped 18001 items (at 58 items/min)
+2018-08-29 22:56:20 [scrapy.extensions.logstats] INFO: Crawled 20225 pages (at 34 pages/min), scraped 18017 items (at 16 items/min)
+2018-08-29 22:57:20 [scrapy.extensions.logstats] INFO: Crawled 20350 pages (at 125 pages/min), scraped 18120 items (at 103 items/min)
+2018-08-29 22:58:20 [scrapy.extensions.logstats] INFO: Crawled 20488 pages (at 138 pages/min), scraped 18244 items (at 124 items/min)
+2018-08-29 22:59:20 [scrapy.extensions.logstats] INFO: Crawled 20707 pages (at 219 pages/min), scraped 18441 items (at 197 items/min)
+2018-08-29 23:00:20 [scrapy.extensions.logstats] INFO: Crawled 20840 pages (at 133 pages/min), scraped 18555 items (at 114 items/min)
+2018-08-29 23:01:20 [scrapy.extensions.logstats] INFO: Crawled 21002 pages (at 162 pages/min), scraped 18706 items (at 151 items/min)
+2018-08-29 23:02:20 [scrapy.extensions.logstats] INFO: Crawled 21087 pages (at 85 pages/min), scraped 18785 items (at 79 items/min)
+2018-08-29 23:03:21 [scrapy.extensions.logstats] INFO: Crawled 21229 pages (at 142 pages/min), scraped 18908 items (at 123 items/min)
+2018-08-29 23:03:49 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-08-29 23:03:49 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-29 23:03:53 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (18976 items) in: output/steam_products.jl
+2018-08-29 23:03:53 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 13,
+ 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 1,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 10,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 2,
+ 'downloader/request_bytes': 19591369,
+ 'downloader/request_count': 24503,
+ 'downloader/request_method_count/GET': 23861,
+ 'downloader/request_method_count/POST': 642,
+ 'downloader/response_bytes': 416580852,
+ 'downloader/response_count': 24490,
+ 'downloader/response_status_count/200': 21301,
+ 'downloader/response_status_count/302': 3189,
+ 'dupefilter/filtered': 3909,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 30, 6, 3, 53, 979588),
+ 'httpcache/firsthand': 4297,
+ 'httpcache/hit': 20193,
+ 'httpcache/miss': 4310,
+ 'httpcache/store': 1108,
+ 'httpcache/uncacheable': 3189,
+ 'item_scraped_count': 18976,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 226,
+ 'memusage/max': 377741312,
+ 'memusage/startup': 65679360,
+ 'request_depth_max': 923,
+ 'response_received_count': 21301,
+ 'retry/count': 13,
+ 'retry/reason_count/twisted.internet.error.TCPTimedOutError': 1,
+ 'retry/reason_count/twisted.internet.error.TimeoutError': 10,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 2,
+ 'scheduler/dequeued': 24502,
+ 'scheduler/dequeued/memory': 24502,
+ 'scheduler/enqueued': 24524,
+ 'scheduler/enqueued/memory': 24524,
+ 'spider_exceptions/AttributeError': 2,
+ 'start_time': datetime.datetime(2018, 8, 30, 2, 7, 20, 946786)}
+2018-08-29 23:03:53 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-08-29 23:07:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-08-29 23:07:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'steam.middlewares.CircumventAgeCheckMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2018-08-29 23:07:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-29 23:07:03 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-29 23:07:03 [scrapy.core.engine] INFO: Spider opened
+2018-08-29 23:07:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-29 23:07:03 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-29 23:07:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 30, 6, 7, 3, 945136),
+ 'log_count/INFO': 7,
+ 'memusage/max': 65617920,
+ 'memusage/startup': 65617920,
+ 'start_time': datetime.datetime(2018, 8, 30, 6, 7, 3, 931178)}
+2018-08-29 23:07:03 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-08-29 23:22:25 [twisted] CRITICAL: Unhandled error in Deferred:
+2018-08-29 23:22:25 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/crawler.py", line 80, in crawl
+    self.engine = self._create_engine()
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/crawler.py", line 105, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/core/engine.py", line 69, in __init__
+    self.downloader = downloader_cls(crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/core/downloader/__init__.py", line 88, in __init__
+    self.middleware = DownloaderMiddlewareManager.from_crawler(crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/middleware.py", line 36, in from_settings
+    mw = mwcls.from_crawler(crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/gog/middlewares.py", line 94, in from_crawler
+    driver_arguments=driver_arguments
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/gog/middlewares.py", line 76, in __init__
+    self.driver = driver_klass(**driver_kwargs)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver.py", line 170, in __init__
+    keep_alive=True)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 156, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 251, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 318, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 496, in _request
+    resp = self._conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+2018-08-30 00:21:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-08-30 00:21:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'steam.middlewares.CircumventAgeCheckMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2018-08-30 00:21:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-30 00:21:01 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-30 00:21:01 [scrapy.core.engine] INFO: Spider opened
+2018-08-30 00:21:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-30 00:21:01 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-30 00:21:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 30, 7, 21, 1, 944422),
+ 'log_count/INFO': 7,
+ 'memusage/max': 64815104,
+ 'memusage/startup': 64815104,
+ 'start_time': datetime.datetime(2018, 8, 30, 7, 21, 1, 923012)}
+2018-08-30 00:21:01 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-08-30 00:21:01 [twisted] CRITICAL: Unhandled error in Deferred:
+2018-08-30 00:21:01 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/crawler.py", line 80, in crawl
+    self.engine = self._create_engine()
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/crawler.py", line 105, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/core/engine.py", line 69, in __init__
+    self.downloader = downloader_cls(crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/core/downloader/__init__.py", line 88, in __init__
+    self.middleware = DownloaderMiddlewareManager.from_crawler(crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/middleware.py", line 36, in from_settings
+    mw = mwcls.from_crawler(crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/gog/middlewares.py", line 94, in from_crawler
+    driver_arguments=driver_arguments
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/gog/middlewares.py", line 76, in __init__
+    self.driver = driver_klass(**driver_kwargs)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver.py", line 170, in __init__
+    keep_alive=True)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 156, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 251, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 318, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 496, in _request
+    resp = self._conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+2018-08-30 00:21:17 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-08-30 00:21:17 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'steam.middlewares.CircumventAgeCheckMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2018-08-30 00:21:17 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-30 00:21:17 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-30 00:21:17 [scrapy.core.engine] INFO: Spider opened
+2018-08-30 00:21:17 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-30 00:21:32 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-08-30 00:21:32 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-30 00:21:32 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-30 00:21:41 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (16 items) in: output/steam_products.jl
+2018-08-30 00:21:41 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 8848,
+ 'downloader/request_count': 21,
+ 'downloader/request_method_count/GET': 21,
+ 'downloader/response_bytes': 337298,
+ 'downloader/response_count': 21,
+ 'downloader/response_status_count/200': 19,
+ 'downloader/response_status_count/302': 2,
+ 'dupefilter/filtered': 25,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 30, 7, 21, 41, 885231),
+ 'httpcache/firsthand': 21,
+ 'httpcache/miss': 21,
+ 'httpcache/store': 19,
+ 'httpcache/uncacheable': 2,
+ 'item_scraped_count': 16,
+ 'log_count/INFO': 10,
+ 'memusage/max': 63582208,
+ 'memusage/startup': 63582208,
+ 'request_depth_max': 2,
+ 'response_received_count': 19,
+ 'scheduler/dequeued': 20,
+ 'scheduler/dequeued/memory': 20,
+ 'scheduler/enqueued': 30,
+ 'scheduler/enqueued/memory': 30,
+ 'start_time': datetime.datetime(2018, 8, 30, 7, 21, 17, 620723)}
+2018-08-30 00:21:41 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-08-30 00:21:52 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (19 items) in: output/gog_products.jl
+2018-08-30 00:21:52 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 6231,
+ 'downloader/request_count': 21,
+ 'downloader/request_method_count/GET': 21,
+ 'downloader/response_bytes': 3469006,
+ 'downloader/response_count': 21,
+ 'downloader/response_status_count/200': 21,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 30, 7, 21, 52, 129002),
+ 'httpcache/firsthand': 21,
+ 'httpcache/miss': 21,
+ 'httpcache/store': 21,
+ 'item_scraped_count': 19,
+ 'memusage/max': 63385600,
+ 'memusage/startup': 63385600,
+ 'request_depth_max': 1,
+ 'response_received_count': 21,
+ 'scheduler/dequeued': 20,
+ 'scheduler/dequeued/memory': 20,
+ 'scheduler/enqueued': 52,
+ 'scheduler/enqueued/memory': 52,
+ 'start_time': datetime.datetime(2018, 8, 30, 7, 21, 17, 601355)}
+2018-08-30 00:21:52 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-08-30 01:03:35 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-08-30 01:03:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'steam.middlewares.CircumventAgeCheckMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-30 01:03:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-30 01:03:35 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-30 01:03:35 [scrapy.core.engine] INFO: Spider opened
+2018-08-30 01:03:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-30 01:03:42 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-08-30 01:03:42 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-30 01:03:42 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-30 01:03:46 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 668,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 21974,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 30, 8, 3, 46, 126791),
+ 'log_count/INFO': 9,
+ 'memusage/max': 63787008,
+ 'memusage/startup': 63787008,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 28,
+ 'scheduler/enqueued/memory': 28,
+ 'start_time': datetime.datetime(2018, 8, 30, 8, 3, 35, 592639)}
+2018-08-30 01:03:46 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-08-30 01:04:03 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (16 items) in: output/gog_products.jl
+2018-08-30 01:04:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 5304,
+ 'downloader/request_count': 18,
+ 'downloader/request_method_count/GET': 18,
+ 'downloader/response_bytes': 2946425,
+ 'downloader/response_count': 18,
+ 'downloader/response_status_count/200': 18,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 30, 8, 4, 3, 900222),
+ 'item_scraped_count': 16,
+ 'memusage/max': 63590400,
+ 'memusage/startup': 63586304,
+ 'request_depth_max': 1,
+ 'response_received_count': 18,
+ 'scheduler/dequeued': 17,
+ 'scheduler/dequeued/memory': 17,
+ 'scheduler/enqueued': 52,
+ 'scheduler/enqueued/memory': 52,
+ 'start_time': datetime.datetime(2018, 8, 30, 8, 3, 35, 578352)}
+2018-08-30 01:04:03 [scrapy.core.engine] INFO: Spider closed (shutdown)

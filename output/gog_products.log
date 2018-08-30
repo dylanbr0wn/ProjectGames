@@ -1,0 +1,40 @@
+2018-08-24 16:37:33 [twisted] CRITICAL: Unhandled error in Deferred:
+2018-08-24 16:37:33 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/crawler.py", line 80, in crawl
+    self.engine = self._create_engine()
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/crawler.py", line 105, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/core/engine.py", line 69, in __init__
+    self.downloader = downloader_cls(crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/core/downloader/__init__.py", line 88, in __init__
+    self.middleware = DownloaderMiddlewareManager.from_crawler(crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/scrapy/middleware.py", line 36, in from_settings
+    mw = mwcls.from_crawler(crawler)
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/gog/middlewares.py", line 94, in from_crawler
+    driver_arguments=driver_arguments
+  File "/Users/dylanbrown/myprojects/ProjectGames/myproject/gog/middlewares.py", line 76, in __init__
+    self.driver = driver_klass(**driver_kwargs)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver.py", line 170, in __init__
+    keep_alive=True)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 156, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 251, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 318, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/dylanbrown/myprojects/ProjectGames/env/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 496, in _request
+    resp = self._conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response

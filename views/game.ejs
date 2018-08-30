@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <form action="/" method="post">
+                <input name="game" type="text" class="ghost-input" placeholder="Enter a Game" required>
+                <input type="submit" class="ghost-button" value="Get Price">
+            </form>
+            <% if(game !== null){ %>
+                <h1 class='gameTitle'>
+                    <%= game[0].name %>
+                </h1>
+                <table class='gameTable'>
+                    <tr>
+                        <% for(var i=0; i < game.length; i++) { %>
+                            <td>
+                                <h2>
+                                    <%= game[i].id %>
+                                </h2>
+                                <% if (game[i].discount_price !== '' && game[i].discount_price !== 0){%>
+                                    <h2>Current Price is $
+                                        <%= game[i].discount_price %>
+                                    </h2>
+                                    <% if (game[i].discount_price !== game[i].price){%>
+                                        <h2>Regular Price is $
+                                            <%= game[i].price %>
+                                        </h2>
+                                        <% } %>
+                                            <% }else{ %>
+                                                <% if (game[i].price !== '' && game[i].price !== 0){%>
+                                                    <h2>Current Price is $
+                                                        <%= game[i].price %>
+                                                    </h2>
+
+                                                    <% }else{ %>
+                                                        <h2>Game is currently Free</h2>
+                                                        <% } %>
+                                                            <% } %>
+                                                                <a href="<%= game[i].url%>" class='game_link_button' role='button'>
+                                                                    Link to Store Page
+                                                                </a>
+                            </td>
+
+                            <% } %>
+                    </tr>
+                </table>
+
+                <% if (common.developer !== ''){%>
+                    <h2>Developer:
+                        <%= common.developer %>
+                    </h2>
+                    <% } %>
+                        <% if (common.publisher !== ''){%>
+                            <h2>Publisher:
+                                <%= common.publisher %>
+                            </h2>
+                            <% } %>
+                                <% if (common.release_date !== ''){%>
+                                    <h2>Release Date:
+                                        <%= common.release_date %>
+                                    </h2>
+                                    <% } %>
+                                        <% if (common.genre !== ''){%>
+                                            <h2>Genres:
+                                                <%= common.genre %>
+                                            </h2>
+                                            <% } %>
+                                                <% } %>
+
+
+                                                    <% if(error !== null){ %>
+                                                        <p>
+                                                            <%= error %>
+                                                        </p>
+                                                        <% } %>
+        </fieldset>
+    </div>
+</body>
+
+</html>
