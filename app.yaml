@@ -1,6 +1,4 @@
-runtime: nodejs
-env: flex
-
+runtime: nodejs8
 # [START gae_flex_postgres_env]
 # The following env variables may contain sensitive information that grants
 # anyone access to your database. Do not add this file to your source control.

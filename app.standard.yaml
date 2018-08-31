@@ -1,9 +1,0 @@
-env_variables:
-  SQL_USER: postgre
-  SQL_PASSWORD: connect
-  SQL_DATABASE: games
-  # e.g. my-awesome-project:us-central1:my-cloud-sql-instance
-  INSTANCE_CONNECTION_NAME: priceofgames:us-west1:gamesdb
-
-beta_settings:
-  cloud_sql_instances: priceofgames:us-west1:gamesdb
