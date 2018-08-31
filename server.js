@@ -1,19 +1,36 @@
+'use strict';
+const process = require('process');
 const express = require('express');
 const bodyParser = require('body-parser');
-const sqlite3 = require('sqlite3').verbose();
+const Knex = require('knex');
 const app = require('express')();
-app.set('port', process.env.PORT || 3000);
-var server = app.listen(app.get('port'), function() {
-  console.log('Express server listening on port ' + server.address().port);
-});
-module.exports = app; 
+// app.set('port', process.env.PORT || 3000);
+// var server = app.listen(app.get('port'), function() {
+//   console.log('Express server listening on port ' + server.address().port);
+// });
+app.enable('trust proxy');
 
-let db = new sqlite3.Database('db_games.db', (err) => {
-    if (err) {
-      console.error(err.message);
+const knex = connect();
+
+function connect () {
+    const config = {
+      user: process.env.SQL_USER,
+      password: process.env.SQL_PASSWORD,
+      database: process.env.SQL_DATABASE
+    };
+  
+    if (process.env.INSTANCE_CONNECTION_NAME && process.env.NODE_ENV === 'production') {
+      config.host = `/cloudsql/${process.env.INSTANCE_CONNECTION_NAME}`;
     }
-    console.log('Connected to the database.');
-  });
+  
+    // Connect to the database
+    const knex = Knex({
+      client: 'pg',
+      connection: config
+    });
+  
+    return knex;
+  }
 
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,31 +42,32 @@ app.get('/', function (req, res) {
 
 app.get('/favicon.ico', (req, res) => res.status(204));
 
+function getlookup (knex,game){
+    let query = '%'.concat(req.body.game,'%');
+    return knex.select().from('lookup').where('name','ilike',query).orderBy('name',)
+}
+
+
 app.post('/', function (req, res) {
     let query = '%'.concat(req.body.game,'%');
     let results = []
     let gog_fail = false
     let steam_fail = false
-    db.all("SELECT * FROM lookup WHERE name LIKE ? COLLATE NOCASE", query ,function(err, row){
-        
-        if(err){
-            res.render('index',{game: null, error: 'No Results Found. Please try Again!'});
-            // console.log('shit err')
-        }else{
-            if(row == undefined){
-                res.render('index',{game: null, error: 'No Results Found. Please try Again!'});
-                // console.log('damn und')
-
-            }else{
-                for(let i = 0;i<row.length;i++){
-                    row[i].url_name = encodeURIComponent(row[i].name)
-                    // console.log(row[i].url_name)
-                }
-                
-                res.render('index',{game: row, error: null});
-            }
+    knex.select()
+    .from('lookup')
+    .where('name','ilike',query)
+    .orderBy('name',)
+    .pluck('name')
+    .then(function(names){
+        var urls = []
+        for(let i = 0;i<names.length;i++){
+            urls.push(encodeURIComponent(names[i]))
+            // console.log(row[i].url_name)
         }
-
+        res.render('index',{game: names, urls: urls,error: null}, { _with: false });
+    })
+    .catch(function(error) {
+        console.error(error.message)
     });
 });
 
@@ -133,3 +151,11 @@ function commonData(obj){
     }  
     return common;
 }
+
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}`);
+  console.log('Press Ctrl+C to quit.');
+});
+
+module.exports = app; 
