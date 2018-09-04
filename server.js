@@ -42,12 +42,6 @@ app.get('/', function (req, res) {
 
 app.get('/favicon.ico', (req, res) => res.status(204));
 
-function getlookup (knex,game){
-    let query = '%'.concat(req.body.game,'%');
-    return knex.select().from('lookup').where('name','ilike',query).orderBy('name',)
-}
-
-
 app.post('/', function (req, res) {
     let query = '%'.concat(req.body.game,'%');
     let results = []
@@ -56,7 +50,7 @@ app.post('/', function (req, res) {
     knex.select()
     .from('lookup')
     .where('name','ilike',query)
-    .orderBy('name',)
+    .orderBy('name','desc')
     .pluck('name')
     .then(function(names){
         var urls = []
@@ -64,51 +58,92 @@ app.post('/', function (req, res) {
             urls.push(encodeURIComponent(names[i]))
             // console.log(row[i].url_name)
         }
-        res.render('index',{game: names, urls: urls,error: null}, { _with: false });
+        res.render('index',{game: names, urls: urls,error: null});
     })
     .catch(function(error) {
         console.error(error.message)
     });
 });
 
+function getSteam(rows){
+
+    let steam = rows[0].steam_lookup;
+    steam = steam.match(/\= \'(.+)\'/gi)
+    if (steam != null){
+        // console.log('here steam')
+        steam = steam[0]
+        let steam_game = (steam.match(/(["'])(?:(?=(\\?))\2.)*?\1/gi))[0]
+        steam_game = steam_game.replace(/'/gi,'')
+        // console.log(steam)
+        return knex.select()
+        .from('steam')
+        .where('name',steam_game)
+        .then(function(rows2){
+            // console.log('where steam')
+            // console.log('steam here')
+            // console.log(rows[0])
+            rows2[0].id = 'Steam';
+            rows2[0].genre = rows2[0].genre.replace(/,/gi,', ')
+            return rows2[0]
+        })
+        .catch(function(error) {
+            console.error(error.message)
+        });
+    }
+    return null
+}
+
+
+function getGOG(rows){
+    let gog = rows[0].gog_lookup;
+    gog = gog.match(/\= \'(.+)\'/gi)
+    var gog_data = null
+    if (gog != null){
+        gog = gog[0]
+        // console.log('here gog')
+        let gog_game = (gog.match(/(["'])(?:(?=(\\?))\2.)*?\1/gi))[0]
+        gog_game = gog_game.replace(/'/gi,'')
+        return knex.select()
+        .from('gog')
+        .where('name',gog_game)
+        .then(function(rows2){
+            rows2[0].id = 'GOG';
+            rows2[0].genre = rows2[0].genre.replace(/,/gi,', ')
+            // console.log(rows2[0])
+            return rows2[0]
+            
+        }).catch(function(error) {
+            console.error(error.message)
+        });
+    }
+    return null
+}
+
 
 app.get('/:name', function (req, res) {
     let name = req.params['name']
-    // console.log(name)
-    db.get("SELECT * FROM lookup WHERE name LIKE ? COLLATE NOCASE", name ,function(err, row){
-        let game_stats =[]
-        let steam = row.steam_lookup;
-        let gog = row.gog_lookup;
-
-        db.get(gog,function(err2,row2){
-            if (err2){
-
-                // console.log('shiiiiiiit gog')
-            }else{
-                // console.log('adding gog')
-                row2.id = 'GOG';
-                row2.genre = row2.genre.replace(/,/gi,', ')
-                game_stats.push(row2)
-             
-            }
-            db.get(steam,function(err3,row3){
-                if (err3){
-                    // console.log('shiiiiiiit steam')
-                }else{
-                    // console.log('adding steam')
-                    row3.id = 'Steam';
-                    row3.genre = row3.genre.replace(/,/gi,', ')
-                    game_stats.push(row3)
-                    
-                    
+    // console.log("here")
+    knex.select()
+    .from('lookup')
+    .where('name','ilike',name)
+    .then(function(rows){
+        Promise.all([getGOG(rows),getSteam(rows)]).then(function(values){
+            var game_data = []
+            for (let i = 0;i<values.length;i++){
+                if (values[i] != null){
+                    game_data.push(values[i])
                 }
-                var common = commonData(game_stats)
-                // console.log(commonData(game_stats))
-                res.render('game',{game: game_stats, common: common, error: null});
-            });
-        });
+            }
+            var common = commonData(game_data)
+            // console.log(game_data)
+            res.render('game',{game: game_data,common:common,error:null})
+        })
+    })
+    .catch(function(error) {
         
+        // console.error(error.message)
     });
+    
 
   })
 

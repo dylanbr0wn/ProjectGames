@@ -37,7 +37,7 @@ def check_data(game):
             if at is 'genre' or at is 'specs':
                 game[at] = []
             else:
-                game[at] = ''
+                game[at] = None
     return game
     
 
@@ -59,8 +59,6 @@ def read_to_db():
                     db.insert_game(game,location)
         os.remove(file_locations[location]) 
 
-if not os.environ.get("games"):
-    os.environ["games"] = 'db_games.db'
 
 start_time = datetime.now()
 print('Running Crawlers')

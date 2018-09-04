@@ -3,25 +3,17 @@
 #
 import re
 import os
-import sqlite3
+import psycopg2
 import time
 import datetime
 import db_init
+from psycopg2 import sql
 
-def test_db_conn():
-    """ Check if db connection can open, create and init db if doesn't already exist """
-    dbname = os.environ.get("games")
-    assert dbname is not None
-
-    # If db file doesn't exist call the initialize module to create and init
-    if not os.path.isfile(dbname):
-        db_init.init(dbname)
 
 def get_db():
-    dbname = os.environ.get("games")
-    assert dbname is not None
-    
-    return sqlite3.connect(dbname)
+    conn = psycopg2.connect(user='postgres', password='connect',
+                        host='localhost', port='5432',dbname='games')
+    return conn
 
 def close_db(conn):
 	conn.close()
@@ -44,79 +36,73 @@ def game_row_to_dict(row):
     return game
 
 
-# def get_games():
-#     conn = get_db()
-#     curs = conn.cursor()
-#     rows = curs.execute ("SELECT * FROM polls_game ORDER BY name").fetchall()
-#     games = []
-#     for row in rows:
-#         game = game_row_to_dict(row)
-#         games.append(game)
-#     return games
-
 def create_new_game(game,site):
     conn = get_db()
     curs = conn.cursor()
-    str = "INSERT INTO " + site + " (url, name, developer, publisher, release_date, specs, genre, price, discount_price, rating, last_updated) VALUES (?,?,?,?,?,?,?,?,?,?,?);"
-    curs.execute(str, 
-                (game['url'], game['app_name'], game['developer'], game['publisher'], game['release_date'], ",".join(game['specs']), ",".join(game['genre']), game['price'], game['discount_price'], game['rating'], time.time()))
+    query = sql.SQL("INSERT INTO {} ({}) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);").format(sql.Identifier(site), sql.SQL(', ').join([sql.Identifier('url'), sql.Identifier('name'), sql.Identifier('developer'), sql.Identifier('publisher'), sql.Identifier('release_date'), sql.Identifier('specs'), sql.Identifier('genre'), sql.Identifier('price'), sql.Identifier('discount_price'), sql.Identifier('rating'), sql.Identifier('last_updated')]),)
+    # print(query.as_string(conn))
+    curs.execute(query.as_string(conn), [game['url'], game['app_name'], game['developer'], game['publisher'], game['release_date'], ",".join(game['specs']), ",".join(game['genre']), game['price'], game['discount_price'], game['rating'], time.time()])
     conn.commit()
     add_to_lookup(game,site)
-    res = curs.execute("SELECT * FROM "+ site + " WHERE OID = (SELECT max(oid) FROM " + site + ")").fetchall()
-    try:
-        return game_row_to_dict(res[0])
-    except:
-        return game_row_to_dict(res)
 
 def update_game(game,site):
     conn = get_db()
     curs = conn.cursor()
-    str = "UPDATE " + site +  " SET price=?, discount_price=?, last_updated=? WHERE name=? COLLATE NOCASE;"
-    curs.execute(str, 
-                (game['price'], game['discount_price'], time.time(), game['app_name']))
+    
+    str = sql.SQL("UPDATE {} SET {} = %s, {} = %s, {} = %s WHERE {} = %s;").format(sql.Identifier(site),sql.Identifier('price'), sql.Identifier('discount_price'), sql.Identifier('last_updated'), sql.Identifier('name'))
+    curs.execute(str.as_string(conn), 
+                (game['price'], game['discount_price'], time.time(),game['app_name'],))
     conn.commit()
     add_to_lookup(game,site)
-    res = curs.execute("SELECT * FROM " + site + " WHERE name=? COLLATE NOCASE;",(game['app_name'],)).fetchall()
-    if len(res) != 0:
-        try:
-            return game_row_to_dict(res[0])
-        except:
-            return game_row_to_dict(res)
-    else:
-       return None
 
 def insert_game(game,site):
     conn = get_db()
     curs = conn.cursor()
-    res = curs.execute("SELECT * FROM " + site + " WHERE name=? COLLATE NOCASE;",(game['app_name'],)).fetchall()
-    if len(res) != 0:
-       return update_game(game,site)
-    else:
-       return create_new_game(game,site)
+    curs.execute("set enable_indexscan = off;")
+    curs.execute("set enable_indexonlyscan = off;")
+    curs.execute("set enable_bitmapscan = off;")
+    # query = 'select * from "{}" where "{}" = %s;'.format(site,'name')
+    query = sql.SQL("select * from {} where {} = %s;").format(sql.Identifier(site),sql.Identifier('name')).as_string(conn)
+    # print(query)
+    curs.execute(query,(game['app_name'],))
+    res = curs.fetchall()
+    # print(res)
+    if len(res) == 0:
+        create_new_game(game,site)
+    elif len(res) != 0:
+       update_game(game,site)
 
 def add_to_lookup(game,site):
     conn = get_db()
     curs = conn.cursor()
     # print(game['app_name'])
-    lookup = 'SELECT * FROM lookup WHERE name=?'
-    res = curs.execute(lookup,(game['app_name'],)).fetchall()
-    game_lookup_name = re.sub('\'','\'\'',game['app_name'])
-    if len(res) == 1:
-        str = "UPDATE lookup SET " + site + "_lookup=? WHERE name=? ;"
+    lookup = sql.SQL('SELECT * FROM {} WHERE {} = %s;').format(sql.Identifier('lookup'),sql.Identifier('name')).as_string(conn)
+    print(lookup)
+    curs.execute(lookup, (game['app_name'],))
+    res =  curs.fetchall()
+    print(res)
+    site_lookup = sql.SQL("SELECT * FROM {} WHERE {} = {}").format(sql.Identifier(site),sql.Identifier('name'), sql.Literal(game['app_name'])).as_string(conn)
+    if len(res) == 0:
         
-        site_lookup = "SELECT * FROM " + site + " WHERE name='" + game_lookup_name + "' COLLATE NOCASE"
-        # print(site_lookup)
-        curs.execute(str, (site_lookup,game['app_name']))
-        conn.commit()
-    elif len(res) == 0:
-        site_lookup = "SELECT * FROM " + site + " WHERE name='" + game_lookup_name + "' COLLATE NOCASE"
         if 'gog' in site:
 
-            str = "INSERT INTO lookup (name, gog_lookup, steam_lookup) VALUES(?, ?, '')"
+            str = sql.SQL("INSERT INTO {} ({}) VALUES(%s, %s,'');").format(sql.Identifier('lookup'),sql.SQL(', ').join([sql.Identifier('name'),sql.Identifier('gog_lookup'),sql.Identifier('steam_lookup')]))
+            print(str)
+            curs.execute(str.as_string(conn),[game['app_name'],site_lookup])
         elif 'steam' in site:
-            str = "INSERT INTO lookup (name, gog_lookup, steam_lookup) VALUES(?, '', ?)"
-        curs.execute(str,(game['app_name'],site_lookup))
+            str = sql.SQL("INSERT INTO {} ({}) VALUES(%s, '', %s);").format(sql.Identifier('lookup'),sql.SQL(', ').join([sql.Identifier('name'),sql.Identifier('gog_lookup'),sql.Identifier('steam_lookup')]))
+            curs.execute(str.as_string(conn),[game['app_name'],site_lookup])
         conn.commit()
+    elif len(res) == 1:
+       
+        print(game['app_name'])
+        str = sql.SQL("UPDATE {} SET {} = %s WHERE {} = %s ;").format(sql.Identifier('lookup'), sql.Identifier(site + '_lookup'),sql.Identifier('name'))
+        
+        
+        # print(site_lookup)
+        curs.execute(str.as_string(conn),(site_lookup,game['app_name'],))
+        conn.commit()
+        
     else:
         print('multiple entries found')
 
