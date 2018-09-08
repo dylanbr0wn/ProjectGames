@@ -1,20 +1,31 @@
+
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>Test</title>
+    <title>Price of Games</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-</head>
-
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" script-name="dorsa" src="http://use.edgefonts.net/dorsa.js"></script>
+  </head>
+  <body>
+    <div class= "titleContainer">
+        <a class= "mainTitle" href= "/">Price of Games</a>
+    </div>
     <div class="container">
-        <fieldset>
-            <form action="/" method="post">
-                <input name="game" type="text" class="ghost-input" placeholder="Enter a Game" required>
-                <input type="submit" class="ghost-button" value="Get Price">
-            </form>
+      <fieldset>
+            <form class= "example" action="/" method="post" >
+                <!-- <input name="game" type="text" class="ghost-input" placeholder="Enter a Game" required>
+                <input type="submit" class="ghost-button" value="Get Price"> -->
+                <input name="game" type="text" placeholder="Search.." required>
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+    </fieldset>
+</div>
+
+        <hr>
+        <div class="container">
             <% if(game !== null){ %>
                 <h1 class='gameTitle'>
                     <%= game[0].name %>
@@ -24,9 +35,9 @@
                         <% for(var i=0; i < game.length; i++) { %>
                             <td>
                                 <h2>
-                                    <%= game[i].id %>
+                                  Site:  <%= game[i].id %>
                                 </h2>
-                                <% if (game[i].discount_price !== '' && game[i].discount_price !== 0){%>
+                                <% if (game[i].discount_price !== null && game[i].discount_price !== 0){%>
                                     <h2>Current Price is $
                                         <%= game[i].discount_price %>
                                     </h2>
@@ -36,13 +47,17 @@
                                         </h2>
                                         <% } %>
                                             <% }else{ %>
-                                                <% if (game[i].price !== '' && game[i].price !== 0){%>
+                                                <% if (game[i].price !== null && game[i].price > 0 ){%>
                                                     <h2>Current Price is $
                                                         <%= game[i].price %>
                                                     </h2>
 
                                                     <% }else{ %>
+                                                        <% if (game[i].price == -1){%>
+                                                            <h2>Price TBA</h2>
+                                                        <%}else{%>
                                                         <h2>Game is currently Free</h2>
+                                                        <% } %>
                                                         <% } %>
                                                             <% } %>
                                                                 <a href="<%= game[i].url%>" class='game_link_button' role='button'>
@@ -54,22 +69,22 @@
                     </tr>
                 </table>
 
-                <% if (common.developer !== ''){%>
+                <% if (common.developer !== null){%>
                     <h2>Developer:
                         <%= common.developer %>
                     </h2>
                     <% } %>
-                        <% if (common.publisher !== ''){%>
+                        <% if (common.publisher !== null){%>
                             <h2>Publisher:
                                 <%= common.publisher %>
                             </h2>
                             <% } %>
-                                <% if (common.release_date !== ''){%>
+                                <% if (common.release_date !== null){%>
                                     <h2>Release Date:
                                         <%= common.release_date %>
                                     </h2>
                                     <% } %>
-                                        <% if (common.genre !== ''){%>
+                                        <% if (common.genre !== null){%>
                                             <h2>Genres:
                                                 <%= common.genre %>
                                             </h2>
@@ -82,8 +97,7 @@
                                                             <%= error %>
                                                         </p>
                                                         <% } %>
-        </fieldset>
-    </div>
+        </div>
 </body>
 
 </html>

@@ -68,16 +68,17 @@ app.post('/', function (req, res) {
 function getSteam(rows){
 
     let steam = rows[0].steam_lookup;
-    steam = steam.match(/\= \'(.+)\'/gi)
-    if (steam != null){
+    // console.log(steam)
+    // steam = steam.match(/\= \'(.+)\'/gi)
+    if (steam.length != 0){
         // console.log('here steam')
-        steam = steam[0]
-        let steam_game = (steam.match(/(["'])(?:(?=(\\?))\2.)*?\1/gi))[0]
-        steam_game = steam_game.replace(/'/gi,'')
+        // steam = steam[0]
+        // let steam_game = (steam.match(/(["'])(?:(?=(\\?))\2.)*?\1/gi))[0]
+        // steam_game = steam_game.replace(/'/gi,'')
         // console.log(steam)
         return knex.select()
         .from('steam')
-        .where('name',steam_game)
+        .where('name',steam)
         .then(function(rows2){
             // console.log('where steam')
             // console.log('steam here')
@@ -96,16 +97,17 @@ function getSteam(rows){
 
 function getGOG(rows){
     let gog = rows[0].gog_lookup;
-    gog = gog.match(/\= \'(.+)\'/gi)
+    // console.log(gog)
+    // gog = gog.match(/\= \'(.+)\'/gi)
     var gog_data = null
-    if (gog != null){
-        gog = gog[0]
+    if (gog.length != 0){
+        // gog = gog[0]
         // console.log('here gog')
-        let gog_game = (gog.match(/(["'])(?:(?=(\\?))\2.)*?\1/gi))[0]
-        gog_game = gog_game.replace(/'/gi,'')
+        // let gog_game = (gog.match(/(["'])(?:(?=(\\?))\2.)*?\1/gi))[0]
+        // gog_game = gog_game.replace(/'/gi,'')
         return knex.select()
         .from('gog')
-        .where('name',gog_game)
+        .where('name',gog)
         .then(function(rows2){
             rows2[0].id = 'GOG';
             rows2[0].genre = rows2[0].genre.replace(/,/gi,', ')
@@ -135,7 +137,7 @@ app.get('/:name', function (req, res) {
                 }
             }
             var common = commonData(game_data)
-            // console.log(game_data)
+            console.log(game_data)
             res.render('game',{game: game_data,common:common,error:null})
         })
     })
@@ -158,27 +160,27 @@ function commonData(obj){
     var common = {}
 
     for(let i = 0;i<obj.length;i++){
-        if(obj[i].name != ''){
+        if(obj[i].name != null){
             if(common['name'] == null){
                 common['name'] = obj[i].name;
             }
         }
-        if(obj[i].developer != ''){
+        if(obj[i].developer != null){
             if(common['developer'] == null){
                 common['developer'] = obj[i].developer;
             }
         }
-        if(obj[i].publisher != ''){
+        if(obj[i].publisher != null){
             if(common['publisher'] == null){
                 common['publisher'] = obj[i].publisher;
             }
         }
-        if(obj[i].release_date != ''){
+        if(obj[i].release_date != null){
             if(common['release_date'] == null || common['release_date'] == '/'){
                 common['release_date'] = obj[i].release_date;
             }
         }
-        if(obj[i].genre != ''){
+        if(obj[i].genre != null){
             if(common['genre'] == null){
                 common['genre'] = obj[i].genre;
             }

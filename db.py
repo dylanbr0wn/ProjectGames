@@ -49,9 +49,9 @@ def update_game(game,site):
     conn = get_db()
     curs = conn.cursor()
     
-    str = sql.SQL("UPDATE {} SET {} = %s, {} = %s, {} = %s WHERE {} = %s;").format(sql.Identifier(site),sql.Identifier('price'), sql.Identifier('discount_price'), sql.Identifier('last_updated'), sql.Identifier('name'))
+    str = sql.SQL("UPDATE {} SET {} = %s, {} = %s, {} = %s, {} = %s WHERE {} = %s;").format(sql.Identifier(site),sql.Identifier('price'), sql.Identifier('discount_price'), sql.Identifier('last_updated'),sql.Identifier('release_date'), sql.Identifier('name'))
     curs.execute(str.as_string(conn), 
-                (game['price'], game['discount_price'], time.time(),game['app_name'],))
+                (game['price'], game['discount_price'], time.time(),game['release_date'],game['app_name'],))
     conn.commit()
     add_to_lookup(game,site)
 
@@ -76,31 +76,32 @@ def add_to_lookup(game,site):
     conn = get_db()
     curs = conn.cursor()
     # print(game['app_name'])
-    lookup = sql.SQL('SELECT * FROM {} WHERE {} = %s;').format(sql.Identifier('lookup'),sql.Identifier('name')).as_string(conn)
-    print(lookup)
+    lookup = sql.SQL('SELECT * FROM {} WHERE {} ILIKE %s;').format(sql.Identifier('lookup'),sql.Identifier('name')).as_string(conn)
+    # print(lookup)
     curs.execute(lookup, (game['app_name'],))
     res =  curs.fetchall()
-    print(res)
-    site_lookup = sql.SQL("SELECT * FROM {} WHERE {} = {}").format(sql.Identifier(site),sql.Identifier('name'), sql.Literal(game['app_name'])).as_string(conn)
+    # print(res)
+    game_lookup_name = game['app_name']
+    # site_lookup = sql.SQL("SELECT * FROM {} WHERE {} = {}").format(sql.Identifier(site),sql.Identifier('name'), sql.Literal(game['app_name'])).as_string(conn)
     if len(res) == 0:
         
         if 'gog' in site:
 
             str = sql.SQL("INSERT INTO {} ({}) VALUES(%s, %s,'');").format(sql.Identifier('lookup'),sql.SQL(', ').join([sql.Identifier('name'),sql.Identifier('gog_lookup'),sql.Identifier('steam_lookup')]))
-            print(str)
-            curs.execute(str.as_string(conn),[game['app_name'],site_lookup])
+            # print(str)
+            curs.execute(str.as_string(conn),[game['app_name'],game['app_name'],])
         elif 'steam' in site:
             str = sql.SQL("INSERT INTO {} ({}) VALUES(%s, '', %s);").format(sql.Identifier('lookup'),sql.SQL(', ').join([sql.Identifier('name'),sql.Identifier('gog_lookup'),sql.Identifier('steam_lookup')]))
-            curs.execute(str.as_string(conn),[game['app_name'],site_lookup])
+            curs.execute(str.as_string(conn),[game['app_name'],game['app_name'],])
         conn.commit()
     elif len(res) == 1:
        
-        print(game['app_name'])
-        str = sql.SQL("UPDATE {} SET {} = %s WHERE {} = %s ;").format(sql.Identifier('lookup'), sql.Identifier(site + '_lookup'),sql.Identifier('name'))
+        # print(game['app_name'])
+        str = sql.SQL("UPDATE {} SET {} = %s WHERE {} ILIKE %s ;").format(sql.Identifier('lookup'), sql.Identifier(site + '_lookup'),sql.Identifier('name'))
         
         
         # print(site_lookup)
-        curs.execute(str.as_string(conn),(site_lookup,game['app_name'],))
+        curs.execute(str.as_string(conn),[game['app_name'],game['app_name'],])
         conn.commit()
         
     else:

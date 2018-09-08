@@ -1,10 +1,10 @@
 body {
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
   }
   .container {
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
   }
   fieldset {
@@ -98,3 +98,72 @@ body {
     letter-spacing: 5px;
     word-spacing: 5px;
   }
+
+  .titleContainer{
+    width: 800px;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.mainTitle{
+    text-decoration: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    font: normal 50px/1 "Dorsa", Helvetica, sans-serif;
+    color: black;
+    align-content: center;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    letter-spacing: 18px;
+    word-spacing: 13px;
+	opacity: 1;
+	transition: .2s;
+    
+}
+
+.mainTitle:hover {
+	opacity: 0.3;
+	 
+}
+
+form.example input[type=text] {
+    border-radius: 15px 0px 0px 15px;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 90%;
+    background: white;
+}
+
+form.example button {
+    border-radius: 0px 15px 15px 0px;
+    float: left;
+    width: 7%; 
+    padding: 10px;
+    background : grey;
+    color: white;
+    font-size: 17px;
+    border: 1px solid black;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: lightgray;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}

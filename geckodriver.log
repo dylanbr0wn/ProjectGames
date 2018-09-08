@@ -1699,3 +1699,468 @@ See /usr/include/servers/bootstrap_defs.h for the error codes.
 [GFX1-]: Receive IPC close with reason=AbnormalShutdown
 [Child 32773, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
 [GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536051545011	geckodriver	INFO	geckodriver 0.21.0
+1536051545021	geckodriver	INFO	Listening on 127.0.0.1:57740
+1536051546022	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.X8wGCUwX9zY8"
+*** You are running in headless mode.
+2018-09-04 01:59:07.772 plugin-container[37295:2977890] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-04 01:59:08.161 plugin-container[37296:2977929] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7603, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536051548502	Marionette	INFO	Listening on port 57751
+1536051548571	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-04 01:59:08.910 plugin-container[37297:2978030] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x833f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536051694721	geckodriver	INFO	geckodriver 0.21.0
+1536051694733	geckodriver	INFO	Listening on 127.0.0.1:58263
+1536051694776	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.yYUybFbSGgM5"
+*** You are running in headless mode.
+2018-09-04 02:01:36.539 plugin-container[37420:2981651] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b0b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-04 02:01:36.773 plugin-container[37421:2981676] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8543, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536051697058	Marionette	INFO	Listening on port 58272
+1536051697134	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-04 02:01:37.454 plugin-container[37422:2981809] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8843, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536110593688	geckodriver	INFO	geckodriver 0.21.0
+1536110593702	geckodriver	INFO	Listening on 127.0.0.1:50661
+1536110594712	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.dJzPV3mPZrsE"
+*** You are running in headless mode.
+2018-09-04 18:23:16.335 plugin-container[41981:4394981] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8843, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-04 18:23:16.831 plugin-container[41982:4395038] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7607, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536110598409	Marionette	INFO	Listening on port 50672
+1536110598487	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-04 18:23:18.558 plugin-container[41983:4395452] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x783f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536174768174	geckodriver	INFO	geckodriver 0.21.0
+1536174768184	geckodriver	INFO	Listening on 127.0.0.1:52346
+1536174769198	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.SHc1wJXFh09K"
+*** You are running in headless mode.
+2018-09-05 12:12:50.825 plugin-container[1502:61738] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x903f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-05 12:12:51.116 plugin-container[1503:61811] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8643, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536174771491	Marionette	INFO	Listening on port 52358
+1536174771567	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-05 12:12:51.933 plugin-container[1504:61904] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x723f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536174836430	geckodriver	INFO	geckodriver 0.21.0
+1536174836436	geckodriver	INFO	Listening on 127.0.0.1:52461
+1536174837445	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.LBCegKAlRKAG"
+*** You are running in headless mode.
+2018-09-05 12:13:59.003 plugin-container[1552:63902] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8547, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-05 12:13:59.228 plugin-container[1553:63924] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x873f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536174839575	Marionette	INFO	Listening on port 52473
+1536174839611	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-05 12:14:00.033 plugin-container[1554:64023] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8c03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536175096700	geckodriver	INFO	geckodriver 0.21.0
+1536175096706	geckodriver	INFO	Listening on 127.0.0.1:54155
+1536175097718	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.8U53DkgihzlE"
+*** You are running in headless mode.
+2018-09-05 12:18:19.135 plugin-container[1702:68917] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7d3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-05 12:18:19.352 plugin-container[1703:68938] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8403, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536175099632	Marionette	INFO	Listening on port 54167
+1536175099663	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-05 12:18:20.036 plugin-container[1704:69036] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x853f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536176249835	geckodriver	INFO	geckodriver 0.21.0
+1536176249842	geckodriver	INFO	Listening on 127.0.0.1:57593
+1536176250853	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.Mx1OO5rLVHQe"
+*** You are running in headless mode.
+2018-09-05 12:37:32.496 plugin-container[1786:83075] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x770b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-05 12:37:32.756 plugin-container[1787:83098] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8947, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536176253072	Marionette	INFO	Listening on port 57605
+1536176253104	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-05 12:37:33.471 plugin-container[1788:83197] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x763f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536178407365	geckodriver	INFO	geckodriver 0.21.0
+1536178407378	geckodriver	INFO	Listening on 127.0.0.1:58348
+1536178408378	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.UjHxEjZAQXKn"
+*** You are running in headless mode.
+2018-09-05 13:13:30.184 plugin-container[1877:104039] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-05 13:13:30.394 plugin-container[1878:104067] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x723f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 1878, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536196161536	geckodriver	INFO	geckodriver 0.21.0
+1536196161546	geckodriver	INFO	Listening on 127.0.0.1:57261
+1536196162550	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.qhMmCQSIND5P"
+*** You are running in headless mode.
+2018-09-05 18:09:24.232 plugin-container[2166:145412] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8547, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-05 18:09:24.430 plugin-container[2167:145442] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536196164755	Marionette	INFO	Listening on port 57272
+1536196164800	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-05 18:09:25.150 plugin-container[2168:145562] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x713f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536215810165	geckodriver	INFO	geckodriver 0.21.0
+1536215810175	geckodriver	INFO	Listening on 127.0.0.1:50017
+1536215811180	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.M6TuoXv7AD7f"
+*** You are running in headless mode.
+2018-09-05 23:36:52.949 plugin-container[2514:176088] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8d43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-05 23:36:53.136 plugin-container[2515:176115] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8703, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536215813493	Marionette	INFO	Listening on port 50030
+1536215813572	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-05 23:36:53.881 plugin-container[2516:176213] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 2515, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536215965712	geckodriver	INFO	geckodriver 0.21.0
+1536215965718	geckodriver	INFO	Listening on 127.0.0.1:50217
+1536215966729	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.E0x1WtrWwwD5"
+*** You are running in headless mode.
+1536345016753	geckodriver	INFO	geckodriver 0.21.0
+1536345016763	geckodriver	INFO	Listening on 127.0.0.1:55981
+1536345017775	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.Pt9Tffs85dPu"
+*** You are running in headless mode.
+2018-09-07 11:30:19.554 plugin-container[5574:745588] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 11:30:19.718 plugin-container[5575:745618] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x753f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536345020080	Marionette	INFO	Listening on port 55992
+1536345020172	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 11:30:20.483 plugin-container[5576:745715] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536351313952	geckodriver	INFO	geckodriver 0.21.0
+1536351313962	geckodriver	INFO	Listening on 127.0.0.1:57701
+1536351314967	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.nHpLH5TDakRh"
+*** You are running in headless mode.
+2018-09-07 13:15:16.739 plugin-container[6865:876022] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8707, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 13:15:17.023 plugin-container[6866:876052] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7737, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536351317506	Marionette	INFO	Listening on port 57712
+1536351317568	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 13:15:17.997 plugin-container[6867:876143] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7143, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 6867, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536351560689	geckodriver	INFO	geckodriver 0.21.0
+1536351560699	geckodriver	INFO	Listening on 127.0.0.1:57788
+1536351561702	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.WjAyz8BavQgV"
+*** You are running in headless mode.
+2018-09-07 13:19:23.378 plugin-container[6987:881307] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8543, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 13:19:23.657 plugin-container[6988:881336] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8843, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536351564000	Marionette	INFO	Listening on port 57799
+1536351564089	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 13:19:24.426 plugin-container[6989:881437] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x803f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 6988, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1536351575332	geckodriver	INFO	geckodriver 0.21.0
+1536351575339	geckodriver	INFO	Listening on 127.0.0.1:57838
+1536351576353	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.Tb4QlC4TDBDI"
+*** You are running in headless mode.
+2018-09-07 13:19:38.241 plugin-container[7025:882435] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7147, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 13:19:38.465 plugin-container[7026:882459] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x793f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536351578736	Marionette	INFO	Listening on port 57849
+1536351578819	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 13:19:39.180 plugin-container[7027:882568] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x683f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536351652567	geckodriver	INFO	geckodriver 0.21.0
+1536351652574	geckodriver	INFO	Listening on 127.0.0.1:57898
+1536351653578	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.HJXeDlAUiUyg"
+*** You are running in headless mode.
+2018-09-07 13:20:55.233 plugin-container[7126:884805] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8843, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 13:20:55.517 plugin-container[7127:884834] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x6f43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536351655881	Marionette	INFO	Listening on port 57909
+1536351655933	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 13:20:56.288 plugin-container[7129:884963] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x723f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536351750947	geckodriver	INFO	geckodriver 0.21.0
+1536351750953	geckodriver	INFO	Listening on 127.0.0.1:57959
+1536351751962	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.JM0rHgSU0iJQ"
+*** You are running in headless mode.
+2018-09-07 13:22:33.587 plugin-container[7195:887722] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7d0b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 13:22:33.815 plugin-container[7196:887747] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8c3b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536351754131	Marionette	INFO	Listening on port 57970
+1536351754253	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 13:22:34.560 plugin-container[7197:887839] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x723f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536351973077	geckodriver	INFO	geckodriver 0.21.0
+1536351973087	geckodriver	INFO	Listening on 127.0.0.1:58607
+1536351974085	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.XSHIHbYq2tDm"
+*** You are running in headless mode.
+2018-09-07 13:26:15.661 plugin-container[7336:894397] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x863f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 13:26:15.968 plugin-container[7337:894426] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7703, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536351976345	Marionette	INFO	Listening on port 58618
+1536351976379	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 13:26:16.809 plugin-container[7338:894579] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x713f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536352121676	geckodriver	INFO	geckodriver 0.21.0
+1536352121687	geckodriver	INFO	Listening on 127.0.0.1:58824
+1536352122689	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.cPnoylcn7xF2"
+*** You are running in headless mode.
+2018-09-07 13:28:44.368 plugin-container[7447:909634] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8133, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 13:28:44.689 plugin-container[7448:909697] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x813f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536352125054	Marionette	INFO	Listening on port 58835
+1536352125177	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 13:28:45.575 plugin-container[7449:909933] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536352136447	geckodriver	INFO	geckodriver 0.21.0
+1536352136454	geckodriver	INFO	Listening on 127.0.0.1:58877
+1536352137463	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.FEQSUBPKSVE6"
+*** You are running in headless mode.
+2018-09-07 13:28:58.864 plugin-container[7493:912935] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8507, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 13:28:59.107 plugin-container[7494:912985] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7343, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536352139415	Marionette	INFO	Listening on port 58888
+1536352139426	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 13:28:59.934 plugin-container[7495:913210] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x723f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 7495, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1536352217510	geckodriver	INFO	geckodriver 0.21.0
+1536352217516	geckodriver	INFO	Listening on 127.0.0.1:59232
+1536352218527	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.rM76Mj8XaW4m"
+*** You are running in headless mode.
+2018-09-07 13:30:19.983 plugin-container[7591:927409] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x833f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 13:30:20.274 plugin-container[7592:927460] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x833f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536352220607	Marionette	INFO	Listening on port 59243
+1536352220739	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 13:30:21.011 plugin-container[7593:927674] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x853f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 7591, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1536352697112	geckodriver	INFO	geckodriver 0.21.0
+1536352697122	geckodriver	INFO	Listening on 127.0.0.1:59457
+1536352698126	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.XondBUBLooFz"
+*** You are running in headless mode.
+2018-09-07 13:38:19.810 plugin-container[7805:1003835] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 13:38:20.149 plugin-container[7806:1003899] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536352700502	Marionette	INFO	Listening on port 59468
+1536352700581	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 13:38:20.929 plugin-container[7807:1004139] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x723f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536353167402	geckodriver	INFO	geckodriver 0.21.0
+1536353167409	geckodriver	INFO	Listening on 127.0.0.1:59545
+1536353168418	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.8ZvzILDeSXZI"
+*** You are running in headless mode.
+2018-09-07 13:46:10.104 plugin-container[7942:1077050] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x803f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 13:46:10.317 plugin-container[7943:1077109] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x743f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536353170738	Marionette	INFO	Listening on port 59556
+1536353170830	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 13:46:11.153 plugin-container[7944:1077365] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x6d3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536358024408	geckodriver	INFO	geckodriver 0.21.0
+1536358024418	geckodriver	INFO	Listening on 127.0.0.1:59680
+1536358025419	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.SV9iSryaQIRi"
+*** You are running in headless mode.
+2018-09-07 15:07:07.072 plugin-container[8179:1154993] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x733f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 15:07:07.400 plugin-container[8180:1155054] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8003, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536358027732	Marionette	INFO	Listening on port 59691
+1536358027793	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 15:07:08.215 plugin-container[8181:1155299] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8703, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536358051600	geckodriver	INFO	geckodriver 0.21.0
+1536358051610	geckodriver	INFO	Listening on 127.0.0.1:59737
+1536358052612	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.U7RrSP07M0J7"
+*** You are running in headless mode.
+2018-09-07 15:07:34.260 plugin-container[8233:1160470] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x773f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 15:07:34.506 plugin-container[8240:1160539] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x863f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536358054958	Marionette	INFO	Listening on port 59748
+1536358054966	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 15:07:35.349 plugin-container[8242:1160808] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8907, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536358396752	geckodriver	INFO	geckodriver 0.21.0
+1536358396761	geckodriver	INFO	Listening on 127.0.0.1:59890
+1536358397766	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.ehB4rsmJZvgy"
+*** You are running in headless mode.
+2018-09-07 15:13:19.619 plugin-container[8386:1215155] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 15:13:19.946 plugin-container[8387:1215219] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536358400303	Marionette	INFO	Listening on port 59901
+1536358400353	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 15:13:20.736 plugin-container[8388:1215452] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8703, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536358885945	geckodriver	INFO	geckodriver 0.21.0
+1536358885954	geckodriver	INFO	Listening on 127.0.0.1:62378
+1536358886957	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.IWE0tWzYdnU1"
+*** You are running in headless mode.
+2018-09-07 15:21:32.648 plugin-container[8527:1291735] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x810b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 15:21:33.440 plugin-container[8528:1291845] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7533, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536358895199	Marionette	INFO	Listening on port 62389
+1536358895249	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 15:21:35.858 plugin-container[8529:1292269] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8b0b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536360422335	geckodriver	INFO	geckodriver 0.21.0
+1536360422347	geckodriver	INFO	Listening on 127.0.0.1:64863
+1536360423348	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.UMKJukvXwD0A"
+*** You are running in headless mode.
+2018-09-07 15:47:05.127 plugin-container[9172:1536852] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x892f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 15:47:05.364 plugin-container[9173:1536911] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x783f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536360425689	Marionette	INFO	Listening on port 64874
+1536360425721	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 15:47:06.310 plugin-container[9174:1537138] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536361053428	geckodriver	INFO	geckodriver 0.21.0
+1536361053439	geckodriver	INFO	Listening on 127.0.0.1:65313
+1536361054443	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.dlJboLuZ5sJg"
+*** You are running in headless mode.
+2018-09-07 15:57:36.153 plugin-container[9620:1640301] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8b3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 15:57:36.500 plugin-container[9621:1640364] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x893f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536361057130	Marionette	INFO	Listening on port 65324
+1536361057138	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 15:57:37.665 plugin-container[9629:1640692] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7107, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536361432555	geckodriver	INFO	geckodriver 0.21.0
+1536361432569	geckodriver	INFO	Listening on 127.0.0.1:49305
+1536361433563	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.04RL0cj0CICy"
+*** You are running in headless mode.
+2018-09-07 16:03:55.303 plugin-container[9808:1700173] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8947, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 16:03:55.542 plugin-container[9809:1700239] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7143, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536361435940	Marionette	INFO	Listening on port 49316
+1536361436029	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 16:03:56.345 plugin-container[9810:1700481] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x703f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536361784302	geckodriver	INFO	geckodriver 0.21.0
+1536361784309	geckodriver	INFO	Listening on 127.0.0.1:50723
+1536361785319	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.TtYBrx0RxRKI"
+*** You are running in headless mode.
+2018-09-07 16:09:46.794 plugin-container[9947:1754733] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 16:09:47.067 plugin-container[9948:1754786] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x853f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536361787405	Marionette	INFO	Listening on port 50734
+1536361787490	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 16:09:47.792 plugin-container[9949:1755007] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7243, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536361919163	geckodriver	INFO	geckodriver 0.21.0
+1536361919169	geckodriver	INFO	Listening on 127.0.0.1:50932
+1536361920182	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.kgmCLW8U2eeN"
+*** You are running in headless mode.
+2018-09-07 16:12:02.014 plugin-container[10031:1777711] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7433, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 16:12:02.447 plugin-container[10032:1777799] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8543, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536361923177	Marionette	INFO	Listening on port 50943
+2018-09-07 16:12:03.300 plugin-container[10044:1778135] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a47, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536361923316	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536362227341	geckodriver	INFO	geckodriver 0.21.0
+1536362227351	geckodriver	INFO	Listening on 127.0.0.1:51415
+1536362228354	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.82WiyhPrzy8I"
+*** You are running in headless mode.
+2018-09-07 16:17:10.087 plugin-container[10217:1827958] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x833f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 16:17:10.315 plugin-container[10218:1828021] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x753f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536362230674	Marionette	INFO	Listening on port 51426
+1536362230705	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 16:17:11.125 plugin-container[10219:1828268] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x783f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 10218, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1536362411478	geckodriver	INFO	geckodriver 0.21.0
+1536362411484	geckodriver	INFO	Listening on 127.0.0.1:51627
+1536362412492	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.eaG5XZY0bO3l"
+*** You are running in headless mode.
+2018-09-07 16:20:14.050 plugin-container[10274:1857049] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x750b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 16:20:14.264 plugin-container[10275:1857102] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7d03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536362414605	Marionette	INFO	Listening on port 51638
+1536362414680	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 16:20:15.018 plugin-container[10276:1857319] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x723f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 10275, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1536362569984	geckodriver	INFO	geckodriver 0.21.0
+1536362569990	geckodriver	INFO	Listening on 127.0.0.1:51718
+1536362570996	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/gz/t_5r0sr90ml01t05xvqyl2kr0000gn/T/rust_mozprofile.iXANtMWEeD03"
+*** You are running in headless mode.
+2018-09-07 16:22:52.676 plugin-container[10360:1872013] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7907, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-07 16:22:52.968 plugin-container[10361:1872072] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x753f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536362573333	Marionette	INFO	Listening on port 51730
+1536362573366	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-07 16:22:53.759 plugin-container[10362:1872387] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x863f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 10361, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown

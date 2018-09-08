@@ -54,7 +54,16 @@ def load_product(response):
     except:
         pass
     release = re.findall(r'<b>Release Date:</b>(.*)',release[2])
-    loader.add_value('release_date', release)
+    early_access = response.css('.early_access_header')
+    coming_soon = response.css('.game_area_comingsoon')
+    if early_access or coming_soon:
+        loader.add_value('early_access', True)
+        loader.add_value('release_date', 'Not Yet Released')
+
+    else:
+        loader.add_value('release_date', release)
+        loader.add_value('early_access', False)
+    
 
 
     loader.add_css('app_name', '.apphub_AppName ::text')
@@ -77,8 +86,10 @@ def load_product(response):
         '//div[@id="game_area_metascore"]/div[contains(@class, "score")]/text()')
 
     early_access = response.css('.early_access_header')
-    if early_access:
+    coming_soon = response.css('.game_area_comingsoon')
+    if early_access or coming_soon:
         loader.add_value('early_access', True)
+
     else:
         loader.add_value('early_access', False)
 
@@ -136,7 +147,7 @@ class ProductSpider(scrapy.Spider):
             page_num = int(re.findall(r'page=(\d+)',str(response.url))[0])
         except:
             page_num=0
-        if page_num > 2000:
+        if page_num > 3000:
             raise scrapy.exceptions.CloseSpider('YU DONE')
         
         page_num = page_num +1
