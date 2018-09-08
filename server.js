@@ -137,7 +137,7 @@ app.get('/:name', function (req, res) {
                 }
             }
             var common = commonData(game_data)
-            console.log(game_data)
+            // console.log(game_data)
             res.render('game',{game: game_data,common:common,error:null})
         })
     })
