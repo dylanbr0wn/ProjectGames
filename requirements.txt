@@ -44,7 +44,7 @@ selenium==3.13.0
 service-identity==17.0.0
 six==1.11.0
 smart-getenv==1.1.0
-Twisted==18.7.0
+Twisted==22.2.0
 urllib3==1.23
 w3lib==1.19.0
 Werkzeug==0.14.1
