@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.4",
-    "ava": "0.25.0"
+    "ava": "5.1.0"
   },
   "cloud-repo-tools": {
     "requiresKeyFile": true,
